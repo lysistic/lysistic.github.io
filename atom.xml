@@ -1,13 +1,18 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>Hexo</title>
-    <link href="http://example.com" />
+    <id>https://lysistic.github.io</id>
+    <title>Lystics</title>
+    <subtitle></subtitle>
+    <icon>https://lysistic.github.io/assets/favicon.ico</icon>
+    <link href="https://lysistic.github.io" />
+    <author>
+      <name>lystics</name>
+    </author>
     <updated>2024-03-02T18:01:38.910Z</updated>
     <entry>
-        <id>http://example.com/2024/03/03/hello-world/</id>
+        <id>https://lysistic.github.io/2024/03/03/hello-world/</id>
         <title>Hello World</title>
-        <link rel="alternate" href="http://example.com/2024/03/03/hello-world/"/>
+        <link rel="alternate" href="https://lysistic.github.io/2024/03/03/hello-world/"/>
         <content type="html">&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
@@ -22,9 +27,9 @@
         <updated>2024-03-02T18:01:38.910Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/03/03/git-learn/</id>
+        <id>https://lysistic.github.io/2024/03/03/git-learn/</id>
         <title>git-learn</title>
-        <link rel="alternate" href="http://example.com/2024/03/03/git-learn/"/>
+        <link rel="alternate" href="https://lysistic.github.io/2024/03/03/git-learn/"/>
         <content type="html">&lt;p&gt;WorkSpace: 工作区  index/Stage: 暂存区 Repository: 仓库区 Remote: 远程仓库&lt;/p&gt;
 &lt;h2 id=&#34;git-init-初始化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-init-初始化&#34;&gt;#&lt;/a&gt;  &lt;code&gt;git init 初始化&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;.git  Git 用来跟踪管理版本&lt;/p&gt;
@@ -299,9 +304,9 @@ $ git stash pop
         <updated>2024-03-02T16:14:01.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/02/12/my-first-article/</id>
+        <id>https://lysistic.github.io/2024/02/12/my-first-article/</id>
         <title>my first article</title>
-        <link rel="alternate" href="http://example.com/2024/02/12/my-first-article/"/>
+        <link rel="alternate" href="https://lysistic.github.io/2024/02/12/my-first-article/"/>
         <content type="html">&lt;h2 id=&#34;this-is-my-first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-is-my-first-blog&#34;&gt;#&lt;/a&gt; This is my first blog.&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Hello World！&lt;/li&gt;

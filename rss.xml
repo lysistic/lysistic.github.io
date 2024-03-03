@@ -1,16 +1,21 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Hexo</title>
-        <link>http://example.com</link>
+        <title>Lystics</title>
+        <subtitle></subtitle>
+        <icon>https://lysistic.github.io/assets/favicon.ico</icon>
+        <link>https://lysistic.github.io</link>
+        <author>
+          <name>lystics</name>
+        </author>
         <description></description>
-        <language>en</language>
+        <language>zh</language>
         <pubDate>Sun, 03 Mar 2024 02:01:38 +0800</pubDate>
         <lastBuildDate>Sun, 03 Mar 2024 02:01:38 +0800</lastBuildDate>
         <item>
-            <guid isPermalink="true">http://example.com/2024/03/03/hello-world/</guid>
+            <guid isPermalink="true">https://lysistic.github.io/2024/03/03/hello-world/</guid>
             <title>Hello World</title>
-            <link>http://example.com/2024/03/03/hello-world/</link>
+            <link>https://lysistic.github.io/2024/03/03/hello-world/</link>
             <pubDate>Sun, 03 Mar 2024 02:01:38 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
@@ -25,9 +30,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2024/03/03/git-learn/</guid>
+            <guid isPermalink="true">https://lysistic.github.io/2024/03/03/git-learn/</guid>
             <title>git-learn</title>
-            <link>http://example.com/2024/03/03/git-learn/</link>
+            <link>https://lysistic.github.io/2024/03/03/git-learn/</link>
             <pubDate>Sun, 03 Mar 2024 00:14:01 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;WorkSpace: 工作区  index/Stage: 暂存区 Repository: 仓库区 Remote: 远程仓库&lt;/p&gt;
 &lt;h2 id=&#34;git-init-初始化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-init-初始化&#34;&gt;#&lt;/a&gt;  &lt;code&gt;git init 初始化&lt;/code&gt;&lt;/h2&gt;
@@ -302,9 +307,9 @@ $ git stash pop
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2024/02/12/my-first-article/</guid>
+            <guid isPermalink="true">https://lysistic.github.io/2024/02/12/my-first-article/</guid>
             <title>my first article</title>
-            <link>http://example.com/2024/02/12/my-first-article/</link>
+            <link>https://lysistic.github.io/2024/02/12/my-first-article/</link>
             <pubDate>Mon, 12 Feb 2024 18:14:24 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;this-is-my-first-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-is-my-first-blog&#34;&gt;#&lt;/a&gt; This is my first blog.&lt;/h2&gt;
 &lt;ul&gt;
