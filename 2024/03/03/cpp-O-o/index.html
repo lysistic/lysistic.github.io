@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="alternate" href="/rss.xml" title="Lystics" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Lystics" type="application/atom+xml"><link rel="alternate" type="application/json" title="Lystics" href="https://lysistic.github.io/feed.json"><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"><link rel="preconnect" href="https://at.alicdn.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.2"><link rel="modulepreload" href="/js/chunk-AHWQPRSO.js"><link rel="modulepreload" href="/js/chunk-D5E3HCIM.js"><link rel="modulepreload" href="/js/chunk-QAWHJ5B3.js"><link rel="modulepreload" href="/js/index.esm-KMEAF737.js"><link rel="modulepreload" href="/js/post-VSW2ZODR.js"><link rel="modulepreload" href="/js/quicklink-L7SCP7EH.js"><link rel="modulepreload" href="/js/siteInit.js"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg" as="image" fetchpriority="high"><link rel="canonical" href="https://lysistic.github.io/2024/03/03/cpp-O-o/"><title>cpp_O.o</title><meta name="generator" content="Hexo 7.0.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">cpp_O.o</h1><div class="meta"><span class="item" title="作成日：2024-03-03 13:05:40"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">投稿日</span><time itemprop="dateCreated datePublished" datetime="2024-03-03T13:05:40+08:00">2024-03-03</time></span><span class="item" title="単語数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">単語数</span><span>23k</span><span class="text">単語</span></span><span class="item" title="読書の時間"><span class="icon"><i class="ic i-clock"></i></span><span class="text">読書の時間</span><span>21 分</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="ナビゲーションバーの切り替え"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Hust_CSE_undergraduate</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg&quot;);"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">ホーム</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh"><link itemprop="mainEntityOfPage" href="https://lysistic.github.io/2024/03/03/cpp-O-o/"><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"><meta itemprop="name" content="lystics"><meta itemprop="description" content=", "></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Lystics"></span><div class="body md" itemprop="articleBody"><ul>
+<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="alternate" href="/rss.xml" title="Lystics" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Lystics" type="application/atom+xml"><link rel="alternate" type="application/json" title="Lystics" href="https://lysistic.github.io/feed.json"><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"><link rel="preconnect" href="https://at.alicdn.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext" media="none" onload="this.media='all'"><link rel="stylesheet" href="/css/app.css?v=0.4.2"><link rel="modulepreload" href="/js/chunk-AHWQPRSO.js"><link rel="modulepreload" href="/js/chunk-D5E3HCIM.js"><link rel="modulepreload" href="/js/chunk-QAWHJ5B3.js"><link rel="modulepreload" href="/js/index.esm-KMEAF737.js"><link rel="modulepreload" href="/js/post-VSW2ZODR.js"><link rel="modulepreload" href="/js/quicklink-L7SCP7EH.js"><link rel="modulepreload" href="/js/siteInit.js"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg" as="image" fetchpriority="high"><link rel="canonical" href="https://lysistic.github.io/2024/03/03/cpp-O-o/"><title>cpp_O.o</title><meta name="generator" content="Hexo 7.0.0"></head><body itemscope="" itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">cpp_O.o</h1><div class="meta"><span class="item" title="Created: 2024-03-03 13:05:40"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">Posted on</span><time itemprop="dateCreated datePublished" datetime="2024-03-03T13:05:40+08:00">2024-03-03</time></span><span class="item" title="Symbols count in article"><span class="icon"><i class="ic i-pen"></i></span><span class="text">Symbols count in article</span><span>23k</span><span class="text">words</span></span><span class="item" title="Reading time"><span class="icon"><i class="ic i-clock"></i></span><span class="text">Reading time</span><span>21 mins.</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="Toggle navigation bar"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Hust_CSE_undergraduate</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&quot;);"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement="" itemscope="" itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">Home</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh"><link itemprop="mainEntityOfPage" href="https://lysistic.github.io/2024/03/03/cpp-O-o/"><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"><meta itemprop="name" content="lystics"><meta itemprop="description" content=", "></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Lystics"></span><div class="body md" itemprop="articleBody"><ul>
 <li>istream // 输入流类型，提供输入操作</li>
 <li>ifstream // 由 istream 派生而来，提供文件读入功能</li>
 <li>ostream // 输出流类型，提供输出操作</li>
@@ -17,35 +17,35 @@
 #include &lt;memory&gt;
 using namespace std;
 // 动态分配内存，没有释放就return
-void memoryLeak1() &#123;
-	string *str = new string(&quot;动态分配内存！&quot;);
+void memoryLeak1() {
+	string *str = new string("动态分配内存！");
 	return;
-&#125;
+}
 // 动态分配内存，虽然有些释放内存的代码，但是被半路截胡return了
-int memoryLeak2() &#123;
-	string *str = new string(&quot;内存泄露！&quot;);
+int memoryLeak2() {
+	string *str = new string("内存泄露！");
 	// ...此处省略一万行代码
 	// 发生某些异常，需要结束函数
-	if (1) &#123;
+	if (1) {
 		return -1;
-	&#125;
+	}
 	/
 	// 另外，使用try、catch结束函数，也会造成内存泄漏！
 	/
 
 	delete str;	// 虽然写了释放内存的代码，但是遭到函数中段返回，使得指针没有得到释放
 	return 1;
-&#125;
+}
 
 
-int main(void) &#123;
+int main(void) {
 
 	memoryLeak1();
 
 	memoryLeak2();
 
 	return 0;
-&#125; 
+} 
 
 </code></pre>
 <p>使用指针并申请空间，用完没有释放就会造成内存泄漏。</p>
@@ -70,29 +70,29 @@ auto_ptr&lt; int &gt; array(new int[10]);</p>
 #include&lt;iostream&gt;
 #include&lt;stdlib.h&gt;
 using namespace std;
-class Test &#123;
+class Test {
 public:
-	Test() &#123; cout &lt;&lt; &quot;gouzao&quot; &lt;&lt; endl; &#125;
-	~Test() &#123; cout &lt;&lt; &quot;xigou...&quot; &lt;&lt; endl; &#125;
+	Test() { cout &lt;&lt; "gouzao" &lt;&lt; endl; }
+	~Test() { cout &lt;&lt; "xigou..." &lt;&lt; endl; }
 
-	int getDebug() &#123; return this-&gt;debug; &#125;
+	int getDebug() { return this-&gt;debug; }
 
 private:
 	int debug = 20;
-&#125;;
+};
 
 using namespace std;
 // 定义智能指针
-int main(void) &#123;
+int main(void) {
 
 	//Test *test = new Test;
 	auto_ptr&lt;Test&gt; test(new Test);
 
-	cout &lt;&lt; &quot;test-&gt;debug：&quot; &lt;&lt; test-&gt;getDebug() &lt;&lt; endl;
-	cout &lt;&lt; &quot;(*test).debug：&quot; &lt;&lt; (*test).getDebug() &lt;&lt; endl;
+	cout &lt;&lt; "test-&gt;debug：" &lt;&lt; test-&gt;getDebug() &lt;&lt; endl;
+	cout &lt;&lt; "(*test).debug：" &lt;&lt; (*test).getDebug() &lt;&lt; endl;
 
 	return 0;
-&#125; 
+} 
 
 </code></pre>
 <p>在程序退出时调用析构函数释放内存</p>
@@ -161,33 +161,33 @@ const int&amp; rv = 5; // 正确：使用const左值引用绑定右值
 
 using namespace std;
 
-class Test &#123;
+class Test {
 public:
-	Test() &#123; cout &lt;&lt; &quot;Test的构造函数...&quot; &lt;&lt; endl; &#125;
-	~Test() &#123; cout &lt;&lt; &quot;Test的析构函数...&quot; &lt;&lt; endl; &#125;
+	Test() { cout &lt;&lt; "Test的构造函数..." &lt;&lt; endl; }
+	~Test() { cout &lt;&lt; "Test的析构函数..." &lt;&lt; endl; }
 
-	int getDebug() &#123; return this-&gt;debug; &#125;
+	int getDebug() { return this-&gt;debug; }
 
 private:
 	int debug = 20;
-&#125;;
+};
 
 // 不要定义为全局变量，没有意义
 //auto_ptr&lt;Test&gt; test(new Test);
 
-void memoryLeak1() &#123;
+void memoryLeak1() {
 	//Test *test = new Test;
 
 	// 定义智能指针
 	auto_ptr&lt;Test&gt; test(new Test);
 	
-	cout &lt;&lt; &quot;test-&gt;debug：&quot; &lt;&lt; test-&gt;getDebug() &lt;&lt; endl;
-	cout &lt;&lt; &quot;(*test).debug：&quot; &lt;&lt; (*test).getDebug() &lt;&lt; endl;
+	cout &lt;&lt; "test-&gt;debug：" &lt;&lt; test-&gt;getDebug() &lt;&lt; endl;
+	cout &lt;&lt; "(*test).debug：" &lt;&lt; (*test).getDebug() &lt;&lt; endl;
 
 
 	// get方法
 	Test *tmp = test.get();		// 获取指针返回
-	cout &lt;&lt; &quot;tmp-&gt;debug：&quot; &lt;&lt; tmp-&gt;getDebug() &lt;&lt; endl;
+	cout &lt;&lt; "tmp-&gt;debug：" &lt;&lt; tmp-&gt;getDebug() &lt;&lt; endl;
 
 
 	// release方法
@@ -209,9 +209,9 @@ void memoryLeak1() &#123;
 	//t1 = t2;
 
 	return;
-&#125;
+}
 
-int memoryLeak2() &#123;
+int memoryLeak2() {
 	//Test *test = new Test();
 
 	// 定义智能指针
@@ -220,16 +220,16 @@ int memoryLeak2() &#123;
 	// ...此处省略一万行代码
 
 	// 发生某些异常，需要结束函数
-	if (1) &#123;
+	if (1) {
 		return -1;
-	&#125;
+	}
 
 	//delete test;
 	return 1;
-&#125;
+}
 
 
-int main1(void) &#123;
+int main1(void) {
 
 	//memoryLeak1();
 
@@ -238,46 +238,46 @@ int main1(void) &#123;
 	//Test *test = new Test;
 	//auto_ptr&lt;Test&gt; test(new Test);
 
-	//cout &lt;&lt; &quot;test-&gt;debug：&quot; &lt;&lt; test-&gt;getDebug() &lt;&lt; endl;
-	//cout &lt;&lt; &quot;(*test).debug：&quot; &lt;&lt; (*test).getDebug() &lt;&lt; endl;
+	//cout &lt;&lt; "test-&gt;debug：" &lt;&lt; test-&gt;getDebug() &lt;&lt; endl;
+	//cout &lt;&lt; "(*test).debug：" &lt;&lt; (*test).getDebug() &lt;&lt; endl;
 
 
 	 auto_ptr 被C++11抛弃的主要原因
-	//auto_ptr&lt;string&gt; p1(new string(&quot;I'm Li Ming!&quot;));
-	//auto_ptr&lt;string&gt; p2(new string(&quot;I'm age 22.&quot;));
+	//auto_ptr&lt;string&gt; p1(new string("I'm Li Ming!"));
+	//auto_ptr&lt;string&gt; p2(new string("I'm age 22."));
 	//
-	//cout &lt;&lt; &quot;p1：&quot; &lt;&lt; p1.get() &lt;&lt; endl;
-	//cout &lt;&lt; &quot;p2：&quot; &lt;&lt; p2.get() &lt;&lt; endl;
+	//cout &lt;&lt; "p1：" &lt;&lt; p1.get() &lt;&lt; endl;
+	//cout &lt;&lt; "p2：" &lt;&lt; p2.get() &lt;&lt; endl;
 
 	//p1 = p2;
-	//cout &lt;&lt; &quot;p1 = p2 赋值后：&quot; &lt;&lt; endl;
-	//cout &lt;&lt; &quot;p1：&quot; &lt;&lt; p1.get() &lt;&lt; endl;
-	//cout &lt;&lt; &quot;p2：&quot; &lt;&lt; p2.get() &lt;&lt; endl;
+	//cout &lt;&lt; "p1 = p2 赋值后：" &lt;&lt; endl;
+	//cout &lt;&lt; "p1：" &lt;&lt; p1.get() &lt;&lt; endl;
+	//cout &lt;&lt; "p2：" &lt;&lt; p2.get() &lt;&lt; endl;
 
 
 
 	// 弊端2.在STL容器中使用auto_ptr存在着重大风险，因为容器内的元素必须支持可复制
 	vector&lt;auto_ptr&lt;string&gt;&gt; vec;
-	auto_ptr&lt;string&gt; p3(new string(&quot;I'm P3&quot;));
-	auto_ptr&lt;string&gt; p4(new string(&quot;I'm P4&quot;));
+	auto_ptr&lt;string&gt; p3(new string("I'm P3"));
+	auto_ptr&lt;string&gt; p4(new string("I'm P4"));
 
 	vec.push_back(std::move(p3));
 	vec.push_back(std::move(p4));
 
-	cout &lt;&lt; &quot;vec.at(0)：&quot; &lt;&lt;  *vec.at(0) &lt;&lt; endl;
-	cout &lt;&lt; &quot;vec[1]：&quot; &lt;&lt;  *vec[1] &lt;&lt; endl;
+	cout &lt;&lt; "vec.at(0)：" &lt;&lt;  *vec.at(0) &lt;&lt; endl;
+	cout &lt;&lt; "vec[1]：" &lt;&lt;  *vec[1] &lt;&lt; endl;
 
 
 	// 风险来了：
 	vec[0] = vec[1];
-	cout &lt;&lt; &quot;vec.at(0)：&quot; &lt;&lt; *vec.at(0) &lt;&lt; endl;
-	cout &lt;&lt; &quot;vec[1]：&quot; &lt;&lt; *vec[1] &lt;&lt; endl;
+	cout &lt;&lt; "vec.at(0)：" &lt;&lt; *vec.at(0) &lt;&lt; endl;
+	cout &lt;&lt; "vec[1]：" &lt;&lt; *vec[1] &lt;&lt; endl;
 
 
 	// 弊端3.不支持对象数组的内存管理
 	//auto_ptr&lt;int[]&gt; array(new int[5]);	// 不能这样定义
 	return 0;
-&#125; 
+} 
 
 
 </code></pre>
@@ -307,11 +307,11 @@ auto_ptr 是用于 C++11 之前的智能指针。由于 auto_ptr 基于排他所
 </li>
 </ol>
 <p>综上所述，虽然  <code>unique_ptr</code>  和  <code>auto_ptr</code>  在某些方面类似，但由于  <code>unique_ptr</code>  提供了更严格的所有权管理和更安全的拷贝语义，因此在 C++11 中推荐使用  <code>unique_ptr</code> ，而不是  <code>auto_ptr</code> 。</p>
-<pre><code>unique_ptr&lt;string&gt; p1(new string(&quot;I'm Li Ming!&quot;));
-unique_ptr&lt;string&gt; p2(new string(&quot;I'm age 22.&quot;));
+<pre><code>unique_ptr&lt;string&gt; p1(new string("I'm Li Ming!"));
+unique_ptr&lt;string&gt; p2(new string("I'm age 22."));
 	
-cout &lt;&lt; &quot;p1：&quot; &lt;&lt; p1.get() &lt;&lt; endl;
-cout &lt;&lt; &quot;p2：&quot; &lt;&lt; p2.get() &lt;&lt; endl;
+cout &lt;&lt; "p1：" &lt;&lt; p1.get() &lt;&lt; endl;
+cout &lt;&lt; "p2：" &lt;&lt; p2.get() &lt;&lt; endl;
 
 p1 = p2;					// 禁止左值赋值
 unique_ptr&lt;string&gt; p3(p2);	// 禁止左值赋值构造
@@ -319,29 +319,29 @@ unique_ptr&lt;string&gt; p3(p2);	// 禁止左值赋值构造
 unique_ptr&lt;string&gt; p3(std::move(p1));
 p1 = std::move(p2);	// 使用move把左值转成右值就可以赋值了，效果和auto_ptr赋值一样
 
-cout &lt;&lt; &quot;p1 = p2 赋值后：&quot; &lt;&lt; endl;
-cout &lt;&lt; &quot;p1：&quot; &lt;&lt; p1.get() &lt;&lt; endl;
-cout &lt;&lt; &quot;p2：&quot; &lt;&lt; p2.get() &lt;&lt; endl;
+cout &lt;&lt; "p1 = p2 赋值后：" &lt;&lt; endl;
+cout &lt;&lt; "p1：" &lt;&lt; p1.get() &lt;&lt; endl;
+cout &lt;&lt; "p2：" &lt;&lt; p2.get() &lt;&lt; endl;
 
 </code></pre>
 <p>参考图片</p>
 <p><img loading="lazy" data-src="C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240303154043937.png" alt="image-20240303154043937"></p>
 <p><strong>B</strong>. 在 STL 容器中使用 unique_ptr，不允许直接赋值</p>
 <pre><code>vector&lt;unique_ptr&lt;string&gt;&gt; vec;
-unique_ptr&lt;string&gt; p3(new string(&quot;I'm P3&quot;));
-unique_ptr&lt;string&gt; p4(new string(&quot;I'm P4&quot;));
+unique_ptr&lt;string&gt; p3(new string("I'm P3"));
+unique_ptr&lt;string&gt; p4(new string("I'm P4"));
 
 vec.push_back(std::move(p3));
 vec.push_back(std::move(p4));
 
-cout &lt;&lt; &quot;vec.at(0)：&quot; &lt;&lt; *vec.at(0) &lt;&lt; endl;
-cout &lt;&lt; &quot;vec[1]：&quot; &lt;&lt; *vec[1] &lt;&lt; endl;
+cout &lt;&lt; "vec.at(0)：" &lt;&lt; *vec.at(0) &lt;&lt; endl;
+cout &lt;&lt; "vec[1]：" &lt;&lt; *vec[1] &lt;&lt; endl;
 
 vec[0] = vec[1];	/* 不允许直接赋值 */
 vec[0] = std::move(vec[1]);		// 需要使用move修饰，使得程序员知道后果
 
-cout &lt;&lt; &quot;vec.at(0)：&quot; &lt;&lt; *vec.at(0) &lt;&lt; endl;
-cout &lt;&lt; &quot;vec[1]：&quot; &lt;&lt; *vec[1] &lt;&lt; endl;
+cout &lt;&lt; "vec.at(0)：" &lt;&lt; *vec.at(0) &lt;&lt; endl;
+cout &lt;&lt; "vec[1]：" &lt;&lt; *vec[1] &lt;&lt; endl;
 
 
 </code></pre>
@@ -354,23 +354,23 @@ cout &lt;&lt; &quot;vec[1]：&quot; &lt;&lt; *vec[1] &lt;&lt; endl;
 <p>综上所述， <code>std::move</code>  的主要作用是将左值转换为右值引用，以便进行移动语义的操作，并且可以避免不必要的拷贝，提高程序的性能。但需要注意的是，使用  <code>std::move</code>  后，原始对象的状态会变为不确定的，因此在移动后，不要再对原始对象进行操作。</p>
 <p>除了上面 ABC 三项外，unique_ptr 的其余用法都与 auto_ptr 用法一致。</p>
 <pre><code>构造
-class Test &#123;
+class Test {
 public:
-	Test() &#123; cout &lt;&lt; &quot;Test的构造函数...&quot; &lt;&lt; endl; &#125;
-	~Test() &#123; cout &lt;&lt; &quot;Test的析构函数...&quot; &lt;&lt; endl; &#125;
+	Test() { cout &lt;&lt; "Test的构造函数..." &lt;&lt; endl; }
+	~Test() { cout &lt;&lt; "Test的析构函数..." &lt;&lt; endl; }
 
-	void doSomething() &#123; cout &lt;&lt; &quot;do something......&quot; &lt;&lt; endl; &#125;
-&#125;;
+	void doSomething() { cout &lt;&lt; "do something......" &lt;&lt; endl; }
+};
 
 
 // 自定义一个内存释放其
-class DestructTest &#123;
+class DestructTest {
 	public:
-	void operator()(Test *pt) &#123;
+	void operator()(Test *pt) {
 		pt-&gt;doSomething();
 		delete pt;
-	&#125;
-&#125;;
+	}
+};
 
 // unique_ptr&lt;T&gt; up; 空的unique_ptr，可以指向类型为T的对象
 unique_ptr&lt;Test&gt; t1;
@@ -413,15 +413,15 @@ t9.reset(new Test);
 
 auto_ptr 与 unique_ptr智能指针的内存管理陷阱
 auto_ptr&lt;string&gt; p1;
-string *str = new string(&quot;智能指针的内存管理陷阱&quot;);
+string *str = new string("智能指针的内存管理陷阱");
 p1.reset(str);	// p1托管str指针
-&#123;
+{
 	auto_ptr&lt;string&gt; p2;
 	p2.reset(str);	// p2接管str指针时，会先取消p1的托管，然后再对str的托管
-&#125;
+}
 
 // 此时p1已经没有托管内容指针了，为NULL，在使用它就会内存报错！
-cout &lt;&lt; &quot;str：&quot; &lt;&lt; *p1 &lt;&lt; endl;
+cout &lt;&lt; "str：" &lt;&lt; *p1 &lt;&lt; endl;
 
 </code></pre>
 <p><img loading="lazy" data-src="https://img-blog.csdnimg.cn/6b0a0e1ec3984107a1787671c7cad0fa.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NwcF9sZWFybmVy,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
@@ -438,29 +438,29 @@ cout &lt;&lt; &quot;str：&quot; &lt;&lt; *p1 &lt;&lt; endl;
 </ol>
 <p>总的来说， <code>std::shared_ptr</code>  是一种非常灵活和安全的智能指针，适用于多个对象需要共享同一个资源的情况。它提供了自动释放资源、引用计数、线程安全等特性，能够有效地管理动态分配的资源，并避免内存泄漏和悬空指针问题。</p>
 <pre><code>
-class Person &#123;
+class Person {
 public:
-	Person(int v) &#123;
+	Person(int v) {
 		this-&gt;no = v;
-		cout &lt;&lt; &quot;构造函数 \t no = &quot; &lt;&lt; this-&gt;no &lt;&lt; endl;
-	&#125;
+		cout &lt;&lt; "构造函数 \t no = " &lt;&lt; this-&gt;no &lt;&lt; endl;
+	}
 
-	~Person() &#123;
-		cout &lt;&lt; &quot;析构函数 \t no = &quot; &lt;&lt; this-&gt;no &lt;&lt; endl;
-	&#125;
+	~Person() {
+		cout &lt;&lt; "析构函数 \t no = " &lt;&lt; this-&gt;no &lt;&lt; endl;
+	}
 
 private:
 	int no;
-&#125;;
+};
 
 // 仿函数，内存删除
-class DestructPerson &#123;
+class DestructPerson {
 public:
-	void operator() (Person *pt) &#123;
-		cout &lt;&lt; &quot;DestructPerson...&quot; &lt;&lt; endl;
+	void operator() (Person *pt) {
+		cout &lt;&lt; "DestructPerson..." &lt;&lt; endl;
 		delete pt;
-	&#125;
-&#125;;
+	}
+};
 
 
 引用计数的使用
@@ -472,19 +472,19 @@ shared_ptr&lt;Person&gt; sp1;
 shared_ptr&lt;Person&gt; sp2(new Person(2));
 
 // 获取智能指针管控的共享指针的数量	use_count()：引用计数
-cout &lt;&lt; &quot;sp1	use_count() = &quot; &lt;&lt; sp1.use_count() &lt;&lt; endl;
-cout &lt;&lt; &quot;sp2	use_count() = &quot; &lt;&lt; sp2.use_count() &lt;&lt; endl &lt;&lt; endl;
+cout &lt;&lt; "sp1	use_count() = " &lt;&lt; sp1.use_count() &lt;&lt; endl;
+cout &lt;&lt; "sp2	use_count() = " &lt;&lt; sp2.use_count() &lt;&lt; endl &lt;&lt; endl;
 
 // 共享
 sp1 = sp2;
 
-cout &lt;&lt; &quot;sp1	use_count() = &quot; &lt;&lt; sp1.use_count() &lt;&lt; endl;
-cout &lt;&lt; &quot;sp2	use_count() = &quot; &lt;&lt; sp2.use_count() &lt;&lt; endl &lt;&lt; endl;
+cout &lt;&lt; "sp1	use_count() = " &lt;&lt; sp1.use_count() &lt;&lt; endl;
+cout &lt;&lt; "sp2	use_count() = " &lt;&lt; sp2.use_count() &lt;&lt; endl &lt;&lt; endl;
 
 shared_ptr&lt;Person&gt; sp3(sp1);
-cout &lt;&lt; &quot;sp1	use_count() = &quot; &lt;&lt; sp1.use_count() &lt;&lt; endl;
-cout &lt;&lt; &quot;sp2	use_count() = &quot; &lt;&lt; sp2.use_count() &lt;&lt; endl;
-cout &lt;&lt; &quot;sp2	use_count() = &quot; &lt;&lt; sp3.use_count() &lt;&lt; endl &lt;&lt; endl;
+cout &lt;&lt; "sp1	use_count() = " &lt;&lt; sp1.use_count() &lt;&lt; endl;
+cout &lt;&lt; "sp2	use_count() = " &lt;&lt; sp2.use_count() &lt;&lt; endl;
+cout &lt;&lt; "sp2	use_count() = " &lt;&lt; sp3.use_count() &lt;&lt; endl &lt;&lt; endl;
 
 
 如上代码，sp1 = sp2; 和 shared_ptr&lt; Person &gt; sp3(sp1);就是在使用引用计数了。
@@ -505,8 +505,8 @@ shared_ptr&lt;T[]&gt; sp4; 空的shared_ptr，可以指向类型为T[]的数组�
 shared_ptr&lt;Person[]&gt; sp4;
 
 
-shared_ptr&lt;T[]&gt; sp5(new T[] &#123; … &#125;); 指向类型为T的数组对象 C++17后支持
-shared_ptr&lt;Person[]&gt; sp5(new Person[5] &#123; 3, 4, 5, 6, 7 &#125;);
+shared_ptr&lt;T[]&gt; sp5(new T[] { … }); 指向类型为T的数组对象 C++17后支持
+shared_ptr&lt;Person[]&gt; sp5(new Person[5] { 3, 4, 5, 6, 7 });
 
 
 
@@ -535,7 +535,7 @@ shared_ptr&lt;int&gt; up2(up1);  // 使用智能指针up1构造up2, 此时int(10
  make_shared 函数的主要功能是在动态内存中分配一个对象并初始化它，返回指向此对象的 shared_ptr; 用法：<br>
 make_shared &lt;类型&gt;(构造类型对象需要的参数列表);</p>
 <pre><code>shared_ptr&lt;int&gt; up3 = make_shared&lt;int&gt;(2); // 多个参数以逗号','隔开，最多接受十个
-shared_ptr&lt;string&gt; up4 = make_shared&lt;string&gt;(&quot;字符串&quot;);
+shared_ptr&lt;string&gt; up4 = make_shared&lt;string&gt;("字符串");
 shared_ptr&lt;Person&gt; up5 = make_shared&lt;Person&gt;(9);
 
 </code></pre>
@@ -580,44 +580,44 @@ using namespace std;
 
 class Girl;
 
-class Boy &#123;
+class Boy {
 public:
-	Boy() &#123;
-		cout &lt;&lt; &quot;Boy 构造函数&quot; &lt;&lt; endl;
-	&#125;
+	Boy() {
+		cout &lt;&lt; "Boy 构造函数" &lt;&lt; endl;
+	}
 
-	~Boy() &#123;
-		cout &lt;&lt; &quot;~Boy 析构函数&quot; &lt;&lt; endl;
-	&#125;
+	~Boy() {
+		cout &lt;&lt; "~Boy 析构函数" &lt;&lt; endl;
+	}
 
-	void setGirlFriend(shared_ptr&lt;Girl&gt; _girlFriend) &#123;
+	void setGirlFriend(shared_ptr&lt;Girl&gt; _girlFriend) {
 		this-&gt;girlFriend = _girlFriend;
-	&#125;
+	}
 
 private:
 	shared_ptr&lt;Girl&gt; girlFriend;
-&#125;;
+};
 
-class Girl &#123;
+class Girl {
 public:
-	Girl() &#123;
-		cout &lt;&lt; &quot;Girl 构造函数&quot; &lt;&lt; endl;
-	&#125;
+	Girl() {
+		cout &lt;&lt; "Girl 构造函数" &lt;&lt; endl;
+	}
 
-	~Girl() &#123;
-		cout &lt;&lt; &quot;~Girl 析构函数&quot; &lt;&lt; endl;
-	&#125;
+	~Girl() {
+		cout &lt;&lt; "~Girl 析构函数" &lt;&lt; endl;
+	}
 
-	void setBoyFriend(shared_ptr&lt;Boy&gt; _boyFriend) &#123;
+	void setBoyFriend(shared_ptr&lt;Boy&gt; _boyFriend) {
 		this-&gt;boyFriend = _boyFriend;
-	&#125;
+	}
 
 private:
 	shared_ptr&lt;Boy&gt; boyFriend;
-&#125;;
+};
 
 
-void useTrap() &#123;
+void useTrap() {
 	shared_ptr&lt;Boy&gt; spBoy(new Boy());
 	shared_ptr&lt;Girl&gt; spGirl(new Girl());
 
@@ -625,15 +625,15 @@ void useTrap() &#123;
 	spBoy-&gt;setGirlFriend(spGirl);
 	spGirl-&gt;setBoyFriend(spBoy);
 	// 此时boy和girl的引用计数都是2
-&#125;
+}
 
 
-int main(void) &#123;
+int main(void) {
 	useTrap();
 
-	system(&quot;pause&quot;);
+	system("pause");
 	return 0;
-&#125;
+}
 
 
 </code></pre>
@@ -648,44 +648,44 @@ using namespace std;
 
 class Girl;
 
-class Boy &#123;
+class Boy {
 public:
-    Boy() &#123;
-        cout &lt;&lt; &quot;Boy 构造函数&quot; &lt;&lt; endl;
-    &#125;
+    Boy() {
+        cout &lt;&lt; "Boy 构造函数" &lt;&lt; endl;
+    }
 
-    ~Boy() &#123;
-        cout &lt;&lt; &quot;~Boy 析构函数&quot; &lt;&lt; endl;
-    &#125;
+    ~Boy() {
+        cout &lt;&lt; "~Boy 析构函数" &lt;&lt; endl;
+    }
 
-    void setGirlFriend(shared_ptr&lt;Girl&gt; _girlFriend) &#123;
+    void setGirlFriend(shared_ptr&lt;Girl&gt; _girlFriend) {
         this-&gt;girlFriend = _girlFriend;
-    &#125;
+    }
 
 private:
     weak_ptr&lt;Girl&gt; girlFriend;
-&#125;;
+};
 
-class Girl &#123;
+class Girl {
 public:
-    Girl() &#123;
-        cout &lt;&lt; &quot;Girl 构造函数&quot; &lt;&lt; endl;
-    &#125;
+    Girl() {
+        cout &lt;&lt; "Girl 构造函数" &lt;&lt; endl;
+    }
 
-    ~Girl() &#123;
-        cout &lt;&lt; &quot;~Girl 析构函数&quot; &lt;&lt; endl;
-    &#125;
+    ~Girl() {
+        cout &lt;&lt; "~Girl 析构函数" &lt;&lt; endl;
+    }
 
-    void setBoyFriend(shared_ptr&lt;Boy&gt; _boyFriend) &#123;
+    void setBoyFriend(shared_ptr&lt;Boy&gt; _boyFriend) {
         this-&gt;boyFriend = _boyFriend;
-    &#125;
+    }
 
 private:
     weak_ptr&lt;Boy&gt; boyFriend;
-&#125;;
+};
 
 
-void useTrap() &#123;
+void useTrap() {
     shared_ptr&lt;Boy&gt; spBoy(new Boy());
     shared_ptr&lt;Girl&gt; spGirl(new Girl());
 
@@ -693,15 +693,15 @@ void useTrap() &#123;
     spBoy-&gt;setGirlFriend(spGirl);
     spGirl-&gt;setBoyFriend(spBoy);
     // 此时boy和girl的引用计数都是2
-&#125;
+}
 
 
-int main(void) &#123;
+int main(void) {
     useTrap();
 
-    system(&quot;pause&quot;);
+    system("pause");
     return 0;
-&#125;
+}
 
 </code></pre>
 <p>当我们执行 useTrap 函数时，注意，是没有结束此函数，boy 和 girl 指针其实是被两个智能指针托管的，所以他们的引用计数是 2</p>
@@ -725,29 +725,29 @@ wpGirl_1.use_count()</p>
 
 using namespace std;
 
-int main() &#123;
+int main() {
     shared_ptr&lt;int&gt; sp(new int(42));
     weak_ptr&lt;int&gt; wp = sp;
 
     // 尝试解引用 weak_ptr
     //int val = *wp;  // 错误：weak_ptr 不支持直接解引用
-    //cout &lt;&lt; &quot;Value: &quot; &lt;&lt; val &lt;&lt; endl;
+    //cout &lt;&lt; "Value: " &lt;&lt; val &lt;&lt; endl;
 
     // 尝试通过 -&gt; 运算符访问 weak_ptr 所指向的对象
     //int val2 = wp-&gt;getValue(); // 错误：weak_ptr 不支持直接使用 -&gt; 运算符
 
     // 将 weak_ptr 转换为 shared_ptr
     shared_ptr&lt;int&gt; sp2 = wp.lock();
-    if (sp2) &#123;
+    if (sp2) {
         // 成功获取 shared_ptr，现在可以使用 * 和 -&gt; 运算符访问所指向的对象
         int val3 = *sp2;
-        cout &lt;&lt; &quot;Value: &quot; &lt;&lt; val3 &lt;&lt; endl;
-    &#125; else &#123;
-        cout &lt;&lt; &quot;The shared_ptr is expired.&quot; &lt;&lt; endl;
-    &#125;
+        cout &lt;&lt; "Value: " &lt;&lt; val3 &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; "The shared_ptr is expired." &lt;&lt; endl;
+    }
 
     return 0;
-&#125;
+}
 
 </code></pre>
 <p>在上面的示例中，我们使用了  <code>lock()</code>  函数将  <code>weak_ptr</code>  转换为  <code>shared_ptr</code> ，然后使用  <code>shared_ptr</code>  的  <code>*</code>  运算符来解引用  <code>shared_ptr</code>  对象并访问所指向的对象的值。这样做的好处是，在转换为  <code>shared_ptr</code>  时，我们同时增加了被指向对象的引用计数，确保在  <code>shared_ptr</code>  存活期间对象不会被销毁。</p>
@@ -763,29 +763,29 @@ int main() &#123;
 
 std::weak_ptr&lt;int&gt; gw;
 
-void f() &#123;
+void f() {
 
 	// expired：判断当前智能指针是否还有托管的对象，有则返回false，无则返回true
-	if (!gw.expired()) &#123;
-		std::cout &lt;&lt; &quot;gw is valid\n&quot;;	// 有效的，还有托管的指针
-	&#125; else &#123;
-		std::cout &lt;&lt; &quot;gw is expired\n&quot;;	// 过期的，没有托管的指针
-	&#125;
-&#125;
+	if (!gw.expired()) {
+		std::cout &lt;&lt; "gw is valid\n";	// 有效的，还有托管的指针
+	} else {
+		std::cout &lt;&lt; "gw is expired\n";	// 过期的，没有托管的指针
+	}
+}
 
-int main() &#123;
-	&#123;
+int main() {
+	{
 		auto sp = std::make_shared&lt;int&gt;(42);
 		gw = sp;
 
 		f();
-	&#125;
+	}
 
-	// 当&#123; &#125;体中的指针生命周期结束后，再来判断其是否还有托管的指针
+	// 当{ }体中的指针生命周期结束后，再来判断其是否还有托管的指针
 	f();
 
 	return 0;
-&#125;
+}
 
 </code></pre>
 <p>六、智能指针的使用陷阱<br>
@@ -813,9 +813,9 @@ shared_ptr&lt; int &gt; sp1(new int(10));<br>
 <pre><code class="language-c++">#include &lt;vector&gt;
 using namespace std;
 
-class Solution &#123;
+class Solution {
 public:
-    int maximalSquare(vector&lt;vector&lt;char&gt;&gt;&amp; matrix) &#123;
+    int maximalSquare(vector&lt;vector&lt;char&gt;&gt;&amp; matrix) {
         int n = matrix.size();
         if (n == 0) return 0;
         int m = matrix[0].size();
@@ -834,10 +834,10 @@ public:
             for (int j = 1; j &lt;= m; j++)
                 f[i][j] += f[i - 1][j] + f[i][j - 1] - f[i - 1][j - 1];
 
-        for (int i = 1; i &lt;= n; i++) &#123;
-            for (int j = 1; j &lt;= m; j++) &#123;
+        for (int i = 1; i &lt;= n; i++) {
+            for (int j = 1; j &lt;= m; j++) {
                 // 确定一个点，枚举边长
-                for (int k = 1; k &lt;= min(n - i + 1, m - j + 1); k++) &#123;
+                for (int k = 1; k &lt;= min(n - i + 1, m - j + 1); k++) {
                     // 枚举边长
                     int x1 = i, x2 = i + k - 1, y1 = j, y2 = j + k - 1;
                     // 确定四个点
@@ -848,27 +848,27 @@ public:
                     if (sum != k * k)
                         break;
                     // 更新答案
-                &#125;
-            &#125;
-        &#125;
+                }
+            }
+        }
 
         return ans;
-    &#125;
-&#125;;
+    }
+};
 
 </code></pre>
 <h3 id="神奇的dp"><a class="anchor" href="#神奇的dp">#</a> 神奇的 DP</h3>
-</div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">編集日</span><time title="修正日：2024-03-03 16:41:03" itemprop="dateModified" datetime="2024-03-03T16:41:03+08:00">2024-03-03</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>寄付</button><p>*~(￣▽￣)~[お茶]を一杯ください</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="lystics WeChat 支払う"><p>WeChat 支払う</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="lystics Alipay"><p>Alipay</p></div></div></div><div id="copyright"><ul><li class="author"><strong>著者：</strong>lystics<i class="ic i-at"><em>@</em></i>Lystics</li><li class="link"><strong>記事へのリンク：</strong><a href="https://lysistic.github.io/2024/03/03/cpp-O-o/" title="cpp_O.o">https://lysistic.github.io/2024/03/03/cpp-O-o/</a></li><li class="license"><strong>著作権表示：</strong>このブログ内のすべての記事は、特別な記載がない限り <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> の下のライセンスで保護されています。</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2024/03/03/hello-world/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciszlczyj20zk0m816d.jpg" title="Hello World"><span class="type">前の記事</span><h3>Hello World</h3></a></div><div class="item right"></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="見出し"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88"><span class="toc-number">1.</span> <span class="toc-text"> 智能指针</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#auto_ptr"><span class="toc-number">1.1.</span> <span class="toc-text"> auto_ptr</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#auto_ptr-%E8%A2%ABc11%E6%8A%9B%E5%BC%83%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.1.1.</span> <span class="toc-text"> auto_ptr 被 C++11 抛弃的主要原因</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.1.1.1.</span> <span class="toc-text"> 初始化</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#shared_ptr%E4%BD%BF%E7%94%A8%E9%99%B7%E9%98%B1"><span class="toc-number">1.1.2.</span> <span class="toc-text"> shared_ptr 使用陷阱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A5%9E%E5%A5%87%E7%9A%84dp"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 神奇的 DP</span></a></li></ol></li></ol></li></ol></div><div class="related panel pjax" data-title="関連記事"></div><div class="overview panel" data-title="概要"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="lystics" src="/assets/avatar.jpg"><p class="name" itemprop="name">lystics</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">4</span><span class="name">ポスト</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/lysistic" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;lysistic"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>ホーム</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2024/03/03/hello-world/" rel="next" title="次の記事"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>ランダムな記事</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/03/git-learn/">git-learn</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/03/hello-world/">Hello World</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/02/12/my-first-article/">my first article</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/03/cpp-O-o/">cpp_O.o</a></span></li></ul></div><div class="rpost pjax"><h2>最近のコメント</h2></div></div><div class="status"><div class="copyright">&copy; 2022 -<span itemprop="copyrightYear">2024</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">lystics @ Hust_CSE_undergraduate</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="単語の総数">30k 単語</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="読書の合計時間">27 分</span></div><div class="powered-by">Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+</div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">Edited on</span><time title="Modified: 2024-03-03 16:41:03" itemprop="dateModified" datetime="2024-03-03T16:41:03+08:00">2024-03-03</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>Donate</button><p>Give me a cup of [coffee]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.webp" alt="lystics WeChat Pay"><p>WeChat Pay</p></div><div><img loading="lazy" data-src="/assets/alipay.webp" alt="lystics Alipay"><p>Alipay</p></div></div></div><div id="copyright"><ul><li class="author"><strong>Post author: </strong>lystics<i class="ic i-at"><em>@</em></i>Lystics</li><li class="link"><strong>Post link: </strong><a href="https://lysistic.github.io/2024/03/03/cpp-O-o/" title="cpp_O.o">https://lysistic.github.io/2024/03/03/cpp-O-o/</a></li><li class="license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> unless stating additionally.</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2024/03/03/hello-world/" rel="prev" itemprop="url" data-background-image="https://tva3.sinaimg.cn/mw690/6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="Hello World"><span class="type">Previous Post</span><h3>Hello World</h3></a></div><div class="item right"></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="Contents"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88"><span class="toc-number">1.</span> <span class="toc-text"> 智能指针</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#auto_ptr"><span class="toc-number">1.1.</span> <span class="toc-text"> auto_ptr</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#auto_ptr-%E8%A2%ABc11%E6%8A%9B%E5%BC%83%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.1.1.</span> <span class="toc-text"> auto_ptr 被 C++11 抛弃的主要原因</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.1.1.1.</span> <span class="toc-text"> 初始化</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#shared_ptr%E4%BD%BF%E7%94%A8%E9%99%B7%E9%98%B1"><span class="toc-number">1.1.2.</span> <span class="toc-text"> shared_ptr 使用陷阱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A5%9E%E5%A5%87%E7%9A%84dp"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 神奇的 DP</span></a></li></ol></li></ol></li></ol></div><div class="related panel pjax" data-title="Related"></div><div class="overview panel" data-title="Overview"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="lystics" src="/assets/avatar.webp"><p class="name" itemprop="name">lystics</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">4</span><span class="name">posts</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/lysistic" class="item github" title="https://github.com/lysistic"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2024/03/03/hello-world/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>Random Posts</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/03/cpp-O-o/">cpp_O.o</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/03/hello-world/">Hello World</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/03/git-learn/">git-learn</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/02/12/my-first-article/">my first article</a></span></li></ul></div><div class="rpost pjax"><h2>Recent Comments</h2></div></div><div class="status"><div class="copyright">© 2022 -<span itemprop="copyrightYear">2024</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">lystics @ Hust_CSE_undergraduate</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="Symbols count total">30k words</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="Reading time total">27 mins.</span></div><div class="powered-by">Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> &amp; Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config="" type="text/javascript">var LOCAL = {
     ispost: true,
         path: `2024/03/03/cpp-O-o/`,
         favicon: {
-        show: `（●´3｀●）やれやれだぜ`,
-        hide: `(´Д｀)大変だ！`
+        show: `(●´3｀●) Here we go again.`,
+        hide: `(´Д｀) It's a disaster!`
     },
     search: {
-        placeholder: "検索…",
-        empty: "「 ${query} 」については何も見つかりませんでした",
-        stats: "${time} ms以内に ${hits} 件の結果が見つかりました"
+        placeholder: "Search for Posts",
+        empty: "We didn't find any results for the search: ${query}",
+        stats: "${hits} results found in ${time} ms"
     },
     copy_tex: false,
     katex: false,
@@ -877,14 +877,14 @@ public:
     fancybox: true,
     nocopy: false,
     outime: true,
-    template: `<div class="note warning"><p><span class="label warning">記事の適時性の警告</span><br> {{publish}} 日前に公開され、 {{updated}} 日前に最終更新された記事です。 一部情報が変更されている可能性がありますので、ご了承ください。</p></div>`,
+    template: `<div class="note warning"><p><span class="label warning">Article Timeliness Alert</span><br>This is an article published {{publish}} days ago and last updated {{updated}} days ago. Some information may have changed, so please be careful to screen it.</p></div>`,
     quiz: {
-        choice: `選択`,
-        multiple: `複数選択`,
-        true_false: `正誤`,
-        essay: `問答`,
-        gap_fill: `空欄`,
-        mistake: `間違った答え`
+        choice: `Multiple Choice`,
+        multiple: `Multiple Answer`,
+        true_false: `True/False`,
+        essay: `Questions`,
+        gap_fill: `Gap Filling`,
+        mistake: `Wrong Answer`
     },
     ignores: [
         (uri) => uri.includes('#'),
@@ -892,4 +892,4 @@ public:
             []
     ]
 };
-</script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/pace/1.2.4/pace.min.js" async></script><script src="/js/siteInit.js?v=0.4.2" type="module" fetchpriority="high" defer="defer"></script></body></html>
+</script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/pace/1.2.4/pace.min.js" async=""></script><script src="/js/siteInit.js?v=0.4.2" type="module" fetchpriority="high" defer=""></script></body></html>
