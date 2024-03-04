@@ -8,7 +8,293 @@
     <author>
       <name>lystics</name>
     </author>
-    <updated>2024-03-03T05:05:40.000Z</updated>
+    <updated>2024-03-04T00:54:19.000Z</updated>
+    <entry>
+        <id>https://lysistic.github.io/2024/03/04/number-theory/</id>
+        <title>number_theory</title>
+        <link rel="alternate" href="https://lysistic.github.io/2024/03/04/number-theory/"/>
+        <content type="html">&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304085613751.png&#34; alt=&#34;image-20240304085613751&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;b 可被 a 整除，b 是 a 的倍数，a 是 b 的因子。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304090047739.png&#34; alt=&#34;image-20240304090047739&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两数满足整除关系，正负绝对值之间都满足，整除是数值大小上的一种特性&lt;/li&gt;
+&lt;li&gt;a 是 b 的因子，b 是 c 的因子，a 自然是 ca 的因子&lt;/li&gt;
+&lt;li&gt;a 是 b 的因子的同时 a 是 c 的因子，所以 a 是 b 和 c 的任意线性组合的因子&lt;/li&gt;
+&lt;li&gt;a 整除 b 的同时 b 整除 a，那么 a 和 b 的绝对值相等&lt;/li&gt;
+&lt;li&gt;如果 a 整除 b，a 和 b 的非零倍数也满足关系&lt;/li&gt;
+&lt;li&gt;a|b,b 是否等于零是一个特殊情况，如果 b 不等于零，那么 a 的绝对值小于等于 b 的绝对值。也就是说 a|b，要么 b 等于零 a 的绝对值大于等于 b，要么 a 的绝对值小于等于 b&lt;/li&gt;
+&lt;li&gt;如果 a 不等于 0，a 不能整除 b，也就是说 b 等于 a 的某个倍数加上一个余数 c，那么 a|b=a|c, 也就是 b 和 c 在模 a 下同余&lt;/li&gt;
+&lt;li&gt;a|b,b 是 a 的倍数，a 是 b 的约数&lt;/li&gt;
+&lt;li&gt;0 是所有非零整数的倍数，非零倍数的约束是有限个，且一定可以写成不同个质数的某幂次的积&lt;/li&gt;
+&lt;li&gt;平凡约数，对于一个不为零的整数 b，+1，-1，+b，-b 是其平凡约数，b 的其他约数称为真约数&lt;/li&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304093544500.png&#34; alt=&#34;image-20240304093544500&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;约数描述的关系是相互的，这是一个闭包，也就是从前到后和从后到前，所以缩小复杂度可以从根号处判断&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304093720894.png&#34; alt=&#34;image-20240304093720894&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;带余数的除法，这里的余数不是我们理解的那个除不尽的余数，这个就是字面意思上的一个平移补充项。余数为 r，这里说 b 可以描述为 a 的多少倍，r 是 b 和 a 的 q 倍的差值。自然的可以想到 r 可以描述为 ma+r0. 无论整数 d 取多少，都能找到余数 r，也就是说保证余数 r 在 d 到 a+d 之间。因为 r0+ka，不断遍历 k 找到第一个大于 d 的数就行了。&lt;/p&gt;
+&lt;p&gt;无论 d 取多少，这么说吧 b 和 r 在模 a 的意义下同余。&lt;/p&gt;
+&lt;p&gt;绝对最小余数，d 取 a 绝对值一半的相反数。那么这个余数就在&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304102755600.png&#34; alt=&#34;image-20240304102755600&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;当 d 取零时，就是我们一般意义下的带余除法，这里的余数 r 称为最小非负余数&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304103003557.png&#34; alt=&#34;image-20240304103003557&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;带余除法的性质&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;任一整数被正整数 a 除后，余数一定是且仅是 0 到 a-1 这 a 个数中的一个&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;相邻的 a 个整数被正整数 a 除后，恰好取到上述 a 个余数，特别的，一定有且仅有一个数被 a 整除。（区间唯一性）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304103545996.png&#34; alt=&#34;image-20240304103545996&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304103607016.png&#34; alt=&#34;image-20240304103607016&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;设整数 p 不等于 0，正负 1，如果 p 除了平凡约束意外没有其他约数，那么称 p 为素数。（不可约数）&lt;/p&gt;
+&lt;p&gt;a 不是素数，则称 a 为合数&lt;/p&gt;
+&lt;p&gt;素数与合数的简单性质&lt;/p&gt;
+&lt;p&gt;合数可以描述为两个整数的乘积&lt;/p&gt;
+&lt;p&gt;对于合数 a 一定存在素数 p&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;≤&lt;/mo&gt;&lt;msqrt&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/msqrt&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\leq\sqrt{a}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.7719em;vertical-align:-0.136em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;≤&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.04em;vertical-align:-0.2397em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord sqrt&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8003em;&#34;&gt;&lt;span class=&#34;svg-align&#34; style=&#34;top:-3em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34; style=&#34;padding-left:0.833em;&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-2.7603em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;hide-tail&#34; style=&#34;min-width:0.853em;height:1.08em;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#39;400em&#39; height=&#39;1.08em&#39; viewBox=&#39;0 0 400000 1080&#39; preserveAspectRatio=&#39;xMinYMin slice&#39;&gt;&lt;path d=&#39;M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.2397em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;​&lt;/p&gt;
+&lt;p&gt;如果有大于 1 的约数，那么这个约数是他自己&lt;/p&gt;
+&lt;p&gt;合数一定可以分解为若干个质数&lt;/p&gt;
+&lt;p&gt;素数有无穷多个&lt;/p&gt;
+&lt;p&gt;所有大于 3 的素数都可以表示为 6n+1 的形式&lt;/p&gt;
+&lt;p&gt;算数基本引理，p 整除 a1a2，那么 p 一定是 a1 的约数或者 a2 的约数&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304105843977.png&#34; alt=&#34;image-20240304105843977&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;标准素数分解式&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304110122252.png&#34; alt=&#34;image-20240304110122252&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;b 是 a 模 m 的剩余&lt;/p&gt;
+&lt;p&gt;最小非负剩余，绝对最小剩余，最小正剩余&lt;/p&gt;
+&lt;p&gt;同余的性质：&lt;/p&gt;
+&lt;p&gt;自反性、对称性、传递性，以及支持线性运算不变性&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304115412271.png&#34; alt=&#34;image-20240304115412271&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304115539249.png&#34; alt=&#34;image-20240304115539249&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;相对复杂，限制更强&lt;/p&gt;
+</content>
+        <updated>2024-03-04T00:54:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://lysistic.github.io/2024/03/04/java/</id>
+        <title>java</title>
+        <link rel="alternate" href="https://lysistic.github.io/2024/03/04/java/"/>
+        <content type="html">&lt;h3 id=&#34;主函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主函数&#34;&gt;#&lt;/a&gt; 主函数&lt;/h3&gt;
+&lt;p&gt;Java 类似 C/C++ 语言，需要一个函数（在面向对象中，这被称为方法）作为程序执行的入口点。&lt;/p&gt;
+&lt;p&gt;Java 的主函数的格式是固定的，形如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Test &amp;#123;
+    public static void main(String[] args) &amp;#123;
+        // 程序的代码
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;包和导入包&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#包和导入包&#34;&gt;#&lt;/a&gt; 包和导入包&lt;/h3&gt;
+&lt;p&gt;Java 中的类（ &lt;code&gt;Class&lt;/code&gt; ）都被放在一个个包（ &lt;code&gt;package&lt;/code&gt; ）里面。在一个包里面不允许有同名的类。在类的第一行通常要说明这个类是属于哪个包的&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;package org.oi-wiki.tutorial;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;包的命名规范一般是： &lt;code&gt;项目所有者的顶级域.项目所有者的二级域.项目名称&lt;/code&gt; 。&lt;/p&gt;
+&lt;h3 id=&#34;输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入&#34;&gt;#&lt;/a&gt; 输入&lt;/h3&gt;
+&lt;p&gt;可以通过  &lt;code&gt;Scanner&lt;/code&gt;  类来处理命令行输入。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;token namespace&#34;&gt;org&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;oiwiki&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tutorial&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token import&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;java&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;util&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Test&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; args&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt; scan &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;in&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// System.in 是输入流&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; scan&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;nextInt&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;double&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; scan&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;nextDouble&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt; c &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; scan&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;nextLine&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304083320721.png&#34; alt=&#34;image-20240304083320721&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Test&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; args&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;char&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token char&#34;&gt;&#39;A&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;double&lt;/span&gt; s &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3.14&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt; str &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Hello world&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%f\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; s&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%c\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%s\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; str&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;基于已有的设计创造新的设计，就是面向对象程序设计中的继承。在继承中，新的类不是凭空产生的，而是基于一个已经存在的类而定义出来的。通过继承，新的类自动获得了基础类中所有的成员，包括成员变量和方法，包括各种访问属性的成员，无论是  &lt;code&gt;public&lt;/code&gt;  还是  &lt;code&gt;private&lt;/code&gt;  。显然，通过继承来定义新的类，远比从头开始写一个新的类要简单快捷和方便。继承是支持代码重用的重要手段之一。&lt;/p&gt;
+&lt;p&gt;在 Java 中，继承的关键字为  &lt;code&gt;extends&lt;/code&gt; ，且 Java 只支持单继承，但可以实现多接口。&lt;/p&gt;
+&lt;p&gt;在 Java 中，所有类都是  &lt;code&gt;Object&lt;/code&gt;  类的子类。&lt;/p&gt;
+&lt;p&gt;子类继承父类，所有的父类的成员，包括变量和方法，都成为了子类的成员，除了构造方法。构造方法是父类所独有的，因为它们的名字就是类的名字，所以父类的构造方法在子类中不存在。除此之外，子类继承得到了父类所有的成员。&lt;/p&gt;
+&lt;p&gt;每个成员有不同的访问属性，子类继承得到了父类所有的成员，但是不同的访问属性使得子类在使用这些成员时有所不同：有些父类的成员直接成为子类的对外的界面，有些则被深深地隐藏起来，即使子类自己也不能直接访问。&lt;/p&gt;
+&lt;p&gt;下表列出了不同访问属性的父类成员在子类中的访问属性：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;父类成员访问属性&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;在父类中的含义&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;在子类中的含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;public&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;对所有类开放&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;对所有类开放&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;protected&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;只有包内其它类、自己和子类可以访问&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;只有包内其它类、自己和子类可以访问&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;缺省（ &lt;code&gt;default&lt;/code&gt; ）&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;只有包内其它类可以访问&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;如果子类与父类在同一个包内，只有包内其它类可以访问；否则相当于  &lt;code&gt;private&lt;/code&gt; ，不能访问&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;private&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;只有自己可以访问&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;不能访问&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;在 Java 中当把一个对象赋值给一个变量时，对象的&lt;/p&gt;
+&lt;p&gt;如果一个类型实现了接口，也可以称之为该接口的子类型。&lt;/p&gt;
+&lt;p&gt;Java 中保存对象类型的变量是多态变量。「多态」这个术语（字面意思是许多形态）是指一个变量可以保存不同类型（即其声明的类型或任何子类型）的对象。&lt;/p&gt;
+&lt;p&gt;多态变量：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Java 的对象变量是多态的，它们能保存不止一种类型的对象。&lt;/li&gt;
+&lt;li&gt;它们可以保存的是声明类型的对象，或声明类型子类的对象。&lt;/li&gt;
+&lt;li&gt;当把子类的对象赋给父类的变量的时候，就发生了向上转型。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;类型必须与变量的类型相匹配。但由于 Java 有继承的概念，便可重新定义为 &lt;strong&gt;一个变量可以保存其所声明的类型或该类型的任何子类型&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;泛型指在类定义时不设置类中的属性或方法参数的具体类型，而是在使用（或创建对象）时再进行类型的定义。泛型本质是参数化类型，即所操作的数据类型被指定为一个参数。&lt;/p&gt;
+&lt;p&gt;泛型提供了编译时类型安全检测的机制，该机制允许编译时检测非法类型。&lt;/p&gt;
+&lt;h2 id=&#34;接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#接口&#34;&gt;#&lt;/a&gt; 接口&lt;/h2&gt;
+&lt;p&gt;接口（英文：Interface）在 Java 中是一个抽象类型，是抽象方法的集合，通常以  &lt;code&gt;interface&lt;/code&gt;  来声明。一个类通过实现接口的方式，从而来继承接口的抽象方法。&lt;/p&gt;
+&lt;p&gt;接口并不是类，编写接口的方式和类很相似，但是它们属于不同的概念。类描述对象的属性和方法。接口则包含类要实现的方法。&lt;/p&gt;
+&lt;p&gt;除非实现接口的类是抽象类，否则该类要定义接口中的所有方法。&lt;/p&gt;
+&lt;p&gt;接口无法被实例化，但是可以被实现。一个实现接口的类，必须实现接口内所描述的所有方法，否则就必须声明为抽象类。另外，在 Java 中，接口类型可用来声明一个变量，他们可以成为一个空指针，或是被绑定在一个以此接口实现的对象。&lt;/p&gt;
+&lt;h2 id=&#34;lambda-表达式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lambda-表达式&#34;&gt;#&lt;/a&gt; Lambda 表达式&lt;/h2&gt;
+&lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
+&lt;p&gt;lambda 表达式也可称为闭包，是 Java 8 的最重要的新特性。&lt;/p&gt;
+&lt;p&gt;lambda 表达式允许把函数作为一个方法的参数（函数作为参数传递进方法中）。&lt;/p&gt;
+&lt;p&gt;使用 lambda 表达式可以使代码变的更加简洁紧凑。&lt;/p&gt;
+&lt;h3 id=&#34;语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#语法&#34;&gt;#&lt;/a&gt; 语法&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;可选类型声明&lt;/strong&gt;：不需要声明参数类型，编译器可以统一识别参数值。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;可选的参数圆括号&lt;/strong&gt;：一个参数无需定义圆括号，但多个参数需要定义圆括号。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;可选的大括号&lt;/strong&gt;：如果主体包含了一个语句，就不需要使用大括号。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;可选的返回关键字&lt;/strong&gt;：如果主体只有一个表达式返回值则编译器会自动返回值，大括号需要指定表达式返回了一个数值。&lt;/p&gt;
+&lt;p&gt;lambda 表达式声明方式如下：&lt;/p&gt;
+&lt;p&gt;以字符串数组按长度排序的自定义比较器为例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.Arrays;
+
+public class Main &amp;#123;
+    static PrintWriter out = new PrintWriter(System.out);
+
+    public static void main(String[] args) &amp;#123;
+        String[] plants = &amp;#123;&amp;quot;Mercury&amp;quot;, &amp;quot;venus&amp;quot;, &amp;quot;Earth&amp;quot;, &amp;quot;Mars&amp;quot;, &amp;quot;Jupiter&amp;quot;, &amp;quot;Saturn&amp;quot;, &amp;quot;Uranus&amp;quot;, &amp;quot;Neptune&amp;quot;&amp;#125;;
+        Arrays.sort(plants, (String first, String second) -&amp;gt; (first.length() - second.length()));
+        for (String word : plants) &amp;#123;
+            out.print(word + &amp;quot; &amp;quot;);
+        &amp;#125;
+        out.close();
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;import java.io.PrintWriter;
+import java.util.Arrays;
+
+public class Main &amp;#123;
+    static PrintWriter out = new PrintWriter(System.out);
+
+    public static void main(String[] args) &amp;#123;
+        String[] plants = &amp;#123;&amp;quot;Mercury&amp;quot;, &amp;quot;venus&amp;quot;, &amp;quot;Earth&amp;quot;, &amp;quot;Mars&amp;quot;, &amp;quot;Jupiter&amp;quot;, &amp;quot;Saturn&amp;quot;, &amp;quot;Uranus&amp;quot;, &amp;quot;Neptune&amp;quot;&amp;#125;;
+        Arrays.sort(plants, (first, second) -&amp;gt;
+        &amp;#123;
+            // 形参不写类型，可以从上下文判断出
+            int result = first.length() - second.length();
+            return result;
+        &amp;#125;);
+        for (String word : plants) &amp;#123;
+            out.print(word + &amp;quot; &amp;quot;);
+        &amp;#125;
+        out.close();
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在其他情况下，如果编译器无法从上下文中推断出参数的类型，则参数的声明是必要的。这通常发生在以下情况下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;当参数的类型无法从上下文中推断出时，例如在一个独立的方法体内或 Lambda 表达式的参数不符合期望类型的情况下。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;javaCopy code// Lambda 表达式参数类型的声明是必要的，因为编译器无法从上下文中推断出
+Comparator&amp;lt;String&amp;gt; comparator = (String s1, String s2) -&amp;gt; s1.compareTo(s2);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;当存在重载的方法时，编译器无法确定应该调用哪个方法，因此需要通过参数的类型来解析调用的方法。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;javaCopy code// 两个重载的方法，编译器需要参数类型来决定调用哪个方法
+void foo(int x) &amp;#123; &amp;#125;
+void foo(double x) &amp;#123; &amp;#125;
+
+// 调用时需要指定参数类型
+foo(10);    // 编译错误，无法确定调用哪个重载方法
+foo(10.0);  // 编译通过，调用 foo(double x)
+foo((int)10.0); // 编译通过，调用 foo(int x)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;总的来说，在大多数情况下，如果编译器能够从上下文中推断出参数的类型，那么参数的声明是可选的。但是，如果编译器无法推断参数的类型，或者存在多个重载的方法，这时候参数的声明就是必要的。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;是一个接口，符合 Java 接口定义。&lt;/li&gt;
+&lt;li&gt;只包含一个抽象方法的接口。&lt;/li&gt;
+&lt;li&gt;因为只有一个未实现的方法，所以 lambda 表达式可以自动填上去。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;函数式接口使用方式如下： 1. 输出长度为 2 的倍数的字符串。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import java.io.PrintWriter;
+
+public class Main &amp;#123;
+    static PrintWriter out = new PrintWriter(System.out);
+
+    public static void main(String[] args) &amp;#123;
+        String[] plants = &amp;#123;&amp;quot;Mercury&amp;quot;, &amp;quot;venus&amp;quot;, &amp;quot;Earth&amp;quot;, &amp;quot;Mars&amp;quot;, &amp;quot;Jupiter&amp;quot;, &amp;quot;Saturn&amp;quot;, &amp;quot;Uranus&amp;quot;, &amp;quot;Neptune&amp;quot;&amp;#125;;
+        Test test = s -&amp;gt; &amp;#123;  // lambda 表达式作为函数式接口的实例
+            if (s.length() % 2 == 0) &amp;#123;
+                return true;
+            &amp;#125;
+            return false;
+        &amp;#125;;
+        for (String word : plants) &amp;#123;
+            if (test.check(word)) &amp;#123;
+                out.print(word + &amp;quot; &amp;quot;);
+            &amp;#125;
+        &amp;#125;
+        out.close();
+    &amp;#125;
+&amp;#125;
+
+interface Test &amp;#123;
+    public boolean check(String s);
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;. 实现加减乘除四则运算。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import java.io.PrintWriter;
+
+public class Main &amp;#123;
+    static PrintWriter out = new PrintWriter(System.out);
+
+    public static double calc(double a, double b, Calculator util) &amp;#123;
+        return util.operation(a, b);
+    &amp;#125;
+
+    public static void main(String[] args) &amp;#123;
+        Calculator util[] = new Calculator[4];  // 定义函数式接口数组
+        util[0] = (a, b) -&amp;gt; a + b;
+        util[1] = (a, b) -&amp;gt; a - b;
+        util[2] = (a, b) -&amp;gt; a * b;
+        util[3] = (a, b) -&amp;gt; a / b;
+        double a = 20, b = 15;
+        for (Calculator c : util) &amp;#123;
+            System.out.println(calc(a, b, c));
+        &amp;#125;
+        out.close();
+    &amp;#125;
+&amp;#125;
+
+interface Calculator &amp;#123;
+    public double operation(double a, double b);
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;泛型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#泛型&#34;&gt;#&lt;/a&gt; 泛型&lt;/h2&gt;
+&lt;p&gt;泛型指在类定义时不设置类中的属性或方法参数的具体类型，而是在使用（或创建对象）时再进行类型的定义。泛型本质是参数化类型，即所操作的数据类型被指定为一个参数。&lt;/p&gt;
+&lt;p&gt;泛型提供了编译时类型安全检测的机制，该机制允许编译时检测非法类型&lt;/p&gt;
+</content>
+        <updated>2024-03-04T00:30:25.000Z</updated>
+    </entry>
     <entry>
         <id>https://lysistic.github.io/2024/03/03/cpp-O-o/</id>
         <title>cpp_O.o</title>
