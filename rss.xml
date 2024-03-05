@@ -88,6 +88,868 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;hr /&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240304115539249.png&#34; alt=&#34;image-20240304115539249&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;相对复杂，限制更强&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305080724341.png&#34; alt=&#34;image-20240305080724341&#34; /&gt;&lt;br /&gt;
+ 更精细更小的生成元仍然满足&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305080751971.png&#34; alt=&#34;image-20240305080751971&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;a 和 b 对 m 同余，那么 a 和 m 的最大公约数和 b 和 m 的最大公约数相等&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305080837855.png&#34; alt=&#34;image-20240305080837855&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;d 能整除 m 且 d 能整除 a 和 b 中的一个 ----------&amp;gt;d 能整除 a 和 b 中的另一个&lt;/p&gt;
+&lt;p&gt;积性函数&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305080952566.png&#34; alt=&#34;image-20240305080952566&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;互质的满足乘法同态，当任意都满足则成为完全积性函数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305081145805.png&#34; alt=&#34;image-20240305081145805&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;完全积性的话自己和自己也能拆，就是&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;f(x*x)=f(x)*f(x)=f^2(x)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10764em;&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;∗&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10764em;&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;∗&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10764em;&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.0641em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10764em;&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;素数记数函数，小于或等于 x 的素数的个数，用&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;π&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\pi(x)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.03588em;&#34;&gt;π&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 来表示，随着其增大，近似于&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mfrac&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\frac{x}{ln(x)}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.2154em;vertical-align:-0.52em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.6954em;&#34;&gt;&lt;span style=&#34;top:-2.655em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mopen mtight&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mclose mtight&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.394em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.52em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def isPrime(a):
+    if a &amp;lt; 2:
+        return False
+    for i in range(2, a):
+        if a % i == 0:
+            return False
+    return True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;暴力做法直接枚举&lt;/p&gt;
+&lt;p&gt;不难发现检验 [2,&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msqrt&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/msqrt&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\sqrt{a}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.04em;vertical-align:-0.2397em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord sqrt&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8003em;&#34;&gt;&lt;span class=&#34;svg-align&#34; style=&#34;top:-3em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34; style=&#34;padding-left:0.833em;&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-2.7603em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;hide-tail&#34; style=&#34;min-width:0.853em;height:1.08em;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#39;400em&#39; height=&#39;1.08em&#39; viewBox=&#39;0 0 400000 1080&#39; preserveAspectRatio=&#39;xMinYMin slice&#39;&gt;&lt;path d=&#39;M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.2397em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;] 内的数就可以&lt;/p&gt;
+&lt;p&gt;素性测试有两种，确定性测试和概率性测试，常见的包括 Lucas-Lehmer 测试和椭圆曲线素性证明。&lt;/p&gt;
+&lt;p&gt;概率性测试：通常比确定性测试快很多，但有可能寄，通过概率性测试的数字被称为可能素数，而通过确定性测试的合数被称为伪素数，最常见的类型是费马伪素数。概率性测试的常见事例包括 Miller-Rabin 测试&lt;/p&gt;
+&lt;p&gt;Fermat 素性测试&lt;/p&gt;
+&lt;p&gt;Fermat 素性检验是一种简单的概率素性检验&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305082141914.png&#34; alt=&#34;image-20240305082141914&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305082223623.png&#34; alt=&#34;image-20240305082223623&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305082309065.png&#34; alt=&#34;image-20240305082309065&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305082357670.png&#34; alt=&#34;image-20240305082357670&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Miller–Rabin 素性测试&lt;/strong&gt;（Miller–Rabin primality test）是进阶的素数判定方法。它是由 Miller 和 Rabin 二人根据费马小定理的逆定理（费马测试）优化得到的。因为和许多类似算法一样，它是使用伪素数的概率性测试，我们必须使用慢得多的确定性算法来保证素性。然而，实际上没有已知的数字通过了高级概率性测试（例如 Miller–Rabin）但实际上却是复合的。因此我们可以放心使用。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305082511735.png&#34; alt=&#34;image-20240305082511735&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305083007839.png&#34; alt=&#34;image-20240305083007839&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;除了之前提到的性质外，卡迈尔数还有一些其他的数学性质：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;平方数性质：&lt;/strong&gt; 卡迈尔数不能是平方数。因为如果一个数是平方数，那么它的所有质因数的指数都是偶数，这与卡迈尔数的定义相矛盾。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;半素数性质：&lt;/strong&gt; 卡迈尔数不能是半素数，即不能表示为两个不同素数的乘积。这是因为如果一个数是半素数，它的所有质因数的指数都是 1，而卡迈尔数的质因数必须至少有一个指数大于 1，以满足费马小定理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;孪生卡迈尔数：&lt;/strong&gt; 存在一些卡迈尔数的 “孪生对”，即两个卡迈尔数相差一个数。这类似于孪生素数对，但卡迈尔数的孪生对相对稀有得多。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;连续卡迈尔数：&lt;/strong&gt; 有一些情况下，连续的整数可能都是卡迈尔数，这种情况在数论中被称为 “卡迈尔链”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;卡迈尔数的分布：&lt;/strong&gt; 卡迈尔数的分布性质在数论中是一个有趣的研究课题，虽然它们比素数更稀有，但它们的分布情况仍然是一个开放的问题。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;katex-display&#34;&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34; display=&#34;block&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mtext&gt;将&lt;/mtext&gt;&lt;msup&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;≡&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mspace&gt;&lt;/mspace&gt;&lt;mspace width=&#34;1em&#34;/&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;m&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;o&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;d&lt;/mi&gt;&lt;/mrow&gt;&lt;mspace width=&#34;0.3333em&#34;/&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;mtext&gt;中的指数&lt;/mtext&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mtext&gt;分解为&lt;/mtext&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/msup&gt;&lt;mtext&gt;，在每轮测试中对随机出来的&lt;/mtext&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mtext&gt;先求出&lt;/mtext&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;/msup&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mo lspace=&#34;0.22em&#34; rspace=&#34;0.22em&#34;&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;m&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;o&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;d&lt;/mi&gt;&lt;/mrow&gt;&lt;/mo&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mtext&gt;，之后对这个值执行最多&lt;/mtext&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mtext&gt;次平方操作，若发现非平凡平方根时即可判断出其不是素数，否则再使用&lt;/mtext&gt;&lt;mi&gt;F&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mtext&gt;素性测试判断。&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;将 a^{n-1} \equiv 1 \pmod n 中的指数 n−1 分解为 n−1=u \times 2^t，在每轮测试中对随机出来的 a 先求出 v = a^{u} \bmod n，之后对这个值执行最多 t 次平方操作，若发现非平凡平方根时即可判断出其不是素数，否则再使用 Fermat 素性测试判断。
+
+&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8641em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;将&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8641em;&#34;&gt;&lt;span style=&#34;top:-3.113em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mbin mtight&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mord mtight&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;≡&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mspace allowbreak&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:1em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathrm&#34;&gt;mod&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.3333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;中的指数&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.7667em;vertical-align:-0.0833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;分解为&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6667em;vertical-align:-0.0833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;×&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8436em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8436em;&#34;&gt;&lt;span style=&#34;top:-3.113em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;t&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;，在每轮测试中对随机出来的&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;先求出&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.03588em;&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.7144em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.7144em;&#34;&gt;&lt;span style=&#34;top:-3.113em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;u&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.0556em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathrm&#34;&gt;mod&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.0556em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;，之后对这个值执行最多&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;次平方操作，若发现非平凡平方根时即可判断出其不是素数，否则再使用&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.13889em;&#34;&gt;F&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;er&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;ma&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;素性测试判断。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这种方法是一种改进的素性测试算法，结合了二次探测定理中的指数分解以及费马素性测试的思想。下面是这个算法的基本步骤：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;katex-display&#34;&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34; display=&#34;block&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;
+&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305084022187.png&#34; alt=&#34;image-20240305084022187&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305084041922.png&#34; alt=&#34;image-20240305084041922&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305084106107.png&#34; alt=&#34;image-20240305084106107&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def millerRabin(n):
+    if n &amp;lt; 3 or n % 2 == 0:
+        return n == 2
+    u, t = n - 1, 0
+    while u % 2 == 0:
+        u = u // 2
+        t = t + 1
+    # test_time 为测试次数,建议设为不小于 8
+    # 的整数以保证正确率,但也不宜过大,否则会影响效率
+    for i in range(test_time):
+        a = random.randint(2, n - 1)
+        v = pow(a, u, n)
+        if v == 1:
+            continue
+        s = 0
+        while s &amp;lt; t:
+            if v == n - 1:
+                break
+            v = v * v % n
+            s = s + 1
+        # 如果找到了非平凡平方根，则会由于无法提前 break; 而运行到 s == t
+        # 如果 Fermat 素性测试无法通过，则一直运行到 s == t 前 v 都不会等于 -1
+        if s == t:
+            return False
+    return True
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305084510922.png&#34; alt=&#34;image-20240305084510922&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305084815004.png&#34; alt=&#34;image-20240305084815004&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bool millerRabin(int n) &amp;#123;
+  if (n &amp;lt; 3 || n % 2 == 0) return n == 2;
+  int u = n - 1, t = 0;
+  while (u % 2 == 0) u /= 2, ++t;
+  // test_time 为测试次数，建议设为不小于 8
+  // 的整数以保证正确率，但也不宜过大，否则会影响效率
+  for (int i = 0; i &amp;lt; test_time; ++i) &amp;#123;
+    int a = rand() % (n - 2) + 2, v = quickPow(a, u, n);
+    if (v == 1) continue;
+    int s;
+    for (s = 0; s &amp;lt; t; ++s) &amp;#123;
+      if (v == n - 1) break;  // 得到平凡平方根 n-1，通过此轮测试
+      v = (long long)v * v % n;
+    &amp;#125;
+    // 如果找到了非平凡平方根，则会由于无法提前 break; 而运行到 s == t
+    // 如果 Fermat 素性测试无法通过，则一直运行到 s == t 前 v 都不会等于 -1
+    if (s == t) return 0;
+  &amp;#125;
+  return 1;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;def millerRabin(n):
+    if n &amp;lt; 3 or n % 2 == 0:
+        return n == 2
+    u, t = n - 1, 0
+    while u % 2 == 0:
+        u = u // 2
+        t = t + 1
+    # test_time 为测试次数,建议设为不小于 8
+    # 的整数以保证正确率,但也不宜过大,否则会影响效率
+    for i in range(test_time):
+        a = random.randint(2, n - 1)
+        v = pow(a, u, n)
+        if v == 1:
+            continue
+        s = 0
+        while s &amp;lt; t:
+            if v == n - 1:
+                break
+            v = v * v % n
+            s = s + 1
+        # 如果找到了非平凡平方根，则会由于无法提前 break; 而运行到 s == t
+        # 如果 Fermat 素性测试无法通过，则一直运行到 s == t 前 v 都不会等于 -1
+        if s == t:
+            return False
+    return True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305091117898.png&#34; alt=&#34;image-20240305091117898&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import random
+
+def power(x, y, p):
+    # 计算 x^y mod p
+    res = 1
+    x = x % p
+    while y &amp;gt; 0:
+        if y &amp;amp; 1:
+            res = (res * x) % p
+        y = y &amp;gt;&amp;gt; 1
+        x = (x * x) % p
+    return res
+
+def miller_rabin(n, k):
+    # 如果 n &amp;lt; 4，直接返回 True 或 False
+    if n &amp;lt;= 1:
+        return False
+    if n &amp;lt;= 3:
+        return True
+
+    # 计算 n-1 = d*2^r
+    r = 0
+    d = n - 1
+    while d % 2 == 0:
+        r += 1
+        d //= 2
+
+    # 进行 k 次检验
+    for _ in range(k):
+        a = random.randint(2, n - 2)
+        x = power(a, d, n)
+        if x == 1 or x == n - 1:
+            continue
+        for _ in range(r - 1):
+            x = (x * x) % n
+            if x == n - 1:
+                break
+        else:
+            return False
+    return True
+
+# 示例：对 2^64 范围内的数进行 Miller-Rabin 素性检验
+bases = [2, 325, 9375, 28178, 450775, 9780504, 1795265022]
+num = 999999999999999989
+if miller_rabin(num, 7):
+    print(num, &amp;quot;is prime&amp;quot;)
+else:
+    print(num, &amp;quot;is composite&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstdlib&amp;gt;
+#include &amp;lt;ctime&amp;gt;
+
+using namespace std;
+
+long long power(long long x, long long y, long long p) &amp;#123;
+    // 计算 x^y mod p
+    long long res = 1;
+    x = x % p;
+    while (y &amp;gt; 0) &amp;#123;
+        if (y &amp;amp; 1) &amp;#123;
+            res = (res * x) % p;
+        &amp;#125;
+        y = y &amp;gt;&amp;gt; 1;
+        x = (x * x) % p;
+    &amp;#125;
+    return res;
+&amp;#125;
+
+bool miller_rabin(long long n, int k) &amp;#123;
+    // 如果 n &amp;lt; 4，直接返回 true 或 false
+    if (n &amp;lt;= 1) return false;
+    if (n &amp;lt;= 3) return true;
+
+    // 计算 n-1 = d*2^r
+    int r = 0;
+    long long d = n - 1;
+    while (d % 2 == 0) &amp;#123;
+        r += 1;
+        d /= 2;
+    &amp;#125;
+
+    // 进行 k 次检验
+    for (int i = 0; i &amp;lt; k; ++i) &amp;#123;
+        long long a = rand() % (n - 3) + 2;
+        long long x = power(a, d, n);
+        if (x == 1 || x == n - 1) continue;
+        for (int j = 0; j &amp;lt; r - 1; ++j) &amp;#123;
+            x = (x * x) % n;
+            if (x == n - 1) break;
+        &amp;#125;
+        if (x != n - 1) return false;
+    &amp;#125;
+    return true;
+&amp;#125;
+
+int main() &amp;#123;
+    // 示例：对 2^64 范围内的数进行 Miller-Rabin 素性检验
+    srand(time(NULL));
+    long long num = 999999999999999989LL;
+    if (miller_rabin(num, 7)) &amp;#123;
+        cout &amp;lt;&amp;lt; num &amp;lt;&amp;lt; &amp;quot; is prime&amp;quot; &amp;lt;&amp;lt; endl;
+    &amp;#125; else &amp;#123;
+        cout &amp;lt;&amp;lt; num &amp;lt;&amp;lt; &amp;quot; is composite&amp;quot; &amp;lt;&amp;lt; endl;
+    &amp;#125;
+    return 0;
+&amp;#125;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果某个正整数 n 满足如下条件，则称为是 &lt;strong&gt;反素数&lt;/strong&gt;：任何小于 n 的正数的约数个数都小于 n 的约数个数&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305092039671.png&#34; alt=&#34;image-20240305092039671&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;神！调整分析法&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305092614528.png&#34; alt=&#34;image-20240305092614528&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;对于这种题，我们只要以因子数为 dfs 的返回条件基准，不断更新找到的最小值就可以了&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+unsigned long long p[16] = &amp;#123;
+    2,  3,  5,  7,  11, 13, 17, 19,
+    23, 29, 31, 37, 41, 43, 47, 53&amp;#125;;  // 根据数据范围可以确定使用的素数最大为53
+
+unsigned long long ans;
+unsigned long long n;
+
+// depth: 当前在枚举第几个素数
+// temp: 当前因子数量为 num的时候的数值
+// num: 当前因子数
+// up：上一个素数的幂，这次应该小于等于这个幂次嘛
+void dfs(unsigned long long depth, unsigned long long temp,
+         unsigned long long num, unsigned long long up) &amp;#123;
+  if (num &amp;gt; n || depth &amp;gt;= 16) return;  // 边界条件
+  if (num == n &amp;amp;&amp;amp; ans &amp;gt; temp) &amp;#123;        // 取最小的ans
+    ans = temp;
+    return;
+  &amp;#125;
+  for (int i = 1; i &amp;lt;= up; i++) &amp;#123;
+    if (temp * p[depth] &amp;gt; ans)
+      break;  // 剪枝：如果加一个这个乘数的结果比ans要大，则必不是最佳方案
+    dfs(depth + 1, temp = temp * p[depth], num * (i + 1),
+        i);  // 取一个该乘数，进行对下一个乘数的搜索
+  &amp;#125;
+&amp;#125;
+
+int main() &amp;#123;
+  scanf(&amp;quot;%llu&amp;quot;, &amp;amp;n);
+  ans = ~(unsigned long long)0;
+  dfs(0, 1, 1, 64);
+  printf(&amp;quot;%llu\n&amp;quot;, ans);
+  return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;dfs 神！&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305093108941.png&#34; alt=&#34;image-20240305093108941&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;cstdio&amp;gt;
+#include &amp;lt;iostream&amp;gt;
+
+int p[16] = &amp;#123;2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53&amp;#125;;
+unsigned long long n;
+unsigned long long ans,
+    ans_num;  // ans 为 n 以内的最大反素数（会持续更新），ans_sum 为
+              // ans的因子数。
+
+// depth: 当前在枚举第几个素数
+// temp: 当前因子数量为 num的时候的数值
+// num: 当前因子数
+// up：上一个素数的幂，这次应该小于等于这个幂次嘛
+void dfs(int depth, unsigned long long temp, unsigned long long num, int up) &amp;#123;
+  if (depth &amp;gt;= 16 || temp &amp;gt; n) return;
+  if (num &amp;gt; ans_num) &amp;#123;  // 更新答案
+    ans = temp;
+    ans_num = num;
+  &amp;#125;
+  if (num == ans_num &amp;amp;&amp;amp; ans &amp;gt; temp) ans = temp;  // 更新答案
+  for (int i = 1; i &amp;lt;= up; i++) &amp;#123;
+    if (temp * p[depth] &amp;gt; n)
+      break;  // 剪枝：如果加一个这个乘数的结果比ans要大，则必不是最佳方案
+    dfs(depth + 1, temp *= p[depth], num * (i + 1),
+        i);  // 取一个该乘数，进行对下一个乘数的搜索
+  &amp;#125;
+  return;
+&amp;#125;
+
+int main() &amp;#123;
+  while (scanf(&amp;quot;%llu&amp;quot;, &amp;amp;n) != EOF) &amp;#123;
+    ans_num = 0;
+    dfs(0, 1, 1, 60);
+    printf(&amp;quot;%llu\n&amp;quot;, ans);
+  &amp;#125;
+  return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305093256296.png&#34; alt=&#34;image-20240305093256296&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;gcd(a,b)=gcd(b,a mod b)&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305093448183.png&#34; alt=&#34;image-20240305093448183&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// Version 1
+int gcd(int a, int b) &amp;#123;
+  if (b == 0) return a;
+  return gcd(b, a % b);
+&amp;#125;
+
+// Version 2
+int gcd(int a, int b) &amp;#123; return b == 0 ? a : gcd(b, a % b); &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;int gcd(int a, int b) &amp;#123;
+  while (b != 0) &amp;#123;
+    int tmp = a;
+    a = b;
+    b = tmp % b;
+  &amp;#125;
+  return a;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;另外，对于 C&lt;ins&gt;14，我们可以使用自带的  &lt;code&gt;__gcd(a,b)&lt;/code&gt;  函数来求最大公约数。而对于 C&lt;/ins&gt; 17，我们可以使用 &lt;a href=&#34;https://en.cppreference.com/w/cpp/header/numeric&#34;&gt;``&lt;/a&gt; 头中的 &lt;a href=&#34;https://en.cppreference.com/w/cpp/numeric/gcd&#34;&gt; &lt;code&gt;std::gcd&lt;/code&gt; &lt;/a&gt; 与 &lt;a href=&#34;https://en.cppreference.com/w/cpp/numeric/lcm&#34;&gt; &lt;code&gt;std::lcm&lt;/code&gt; &lt;/a&gt; 来求最大公约数和最小公倍数。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305095100433.png&#34; alt=&#34;image-20240305095100433&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305095146169.png&#34; alt=&#34;image-20240305095146169&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305095941238.png&#34; alt=&#34;image-20240305095941238&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Big gcd(Big a, Big b) &amp;#123;
+  // 记录a和b的公因数2出现次数
+  int atimes = 0, btimes = 0;
+  while (a % 2 == 0) &amp;#123;
+    a &amp;gt;&amp;gt;= 1;
+    atimes++;
+  &amp;#125;
+  while (b % 2 == 0) &amp;#123;
+    b &amp;gt;&amp;gt;= 1;
+    btimes++;
+  &amp;#125;
+  for (;;) &amp;#123;
+    // a和b公因数中的2已经计算过了，后面不可能出现a,b均为偶数的情况
+    while (a % 2 == 0) &amp;#123;
+      a &amp;gt;&amp;gt;= 1;
+    &amp;#125;
+    while (b % 2 == 0) &amp;#123;
+      b &amp;gt;&amp;gt;= 1;
+    &amp;#125;
+    if (a == b) break;
+    // 确保 a&amp;gt;=b
+    if (a &amp;lt; b) swap(a, b);
+    a -= b;
+  &amp;#125;
+  return a &amp;lt;&amp;lt; min(atimes, btimes);
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305100854375.png&#34; alt=&#34;image-20240305100854375&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305100917948.png&#34; alt=&#34;image-20240305100917948&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305101025113.png&#34; alt=&#34;image-20240305101025113&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int gcd(int a, int b, int&amp;amp; x, int&amp;amp; y) &amp;#123;
+  x = 1, y = 0;
+  int x1 = 0, y1 = 1, a1 = a, b1 = b;
+  while (b1) &amp;#123;
+    int q = a1 / b1;
+    tie(x, x1) = make_tuple(x1, x - q * x1);
+    tie(y, y1) = make_tuple(y1, y - q * y1);
+    tie(a1, b1) = make_tuple(b1, a1 - q * b1);
+  &amp;#125;
+  return a1;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305102040888.png&#34; alt=&#34;image-20240305102040888&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;线性代数 yyds&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305102254449.png&#34; alt=&#34;image-20240305102254449&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305102303903.png&#34; alt=&#34;image-20240305102303903&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305102312659.png&#34; alt=&#34;image-20240305102312659&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305102631758.png&#34; alt=&#34;image-20240305102631758&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305102721727.png&#34; alt=&#34;image-20240305102721727&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305102823965.png&#34; alt=&#34;image-20240305102823965&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;long long H(int n) &amp;#123;
+  long long res = 0;  // 储存结果
+  int l = 1, r;       // 块左端点与右端点
+  while (l &amp;lt;= n) &amp;#123;
+    r = n / (n / l);  // 计算当前块的右端点
+    res += (r - l + 1) * 1LL *
+           (n / l);  // 累加这一块的贡献到结果中。乘上 1LL 防止溢出
+    l = r + 1;  // 左端点移到下一块
+  &amp;#125;
+  return res;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305103222715.png&#34; alt=&#34;image-20240305103222715&#34; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.luogu.com.cn/problem/P2261&#34;&gt;CQOI2007 余数求和&lt;/a&gt;（需要一点转化和特判）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;category=27&amp;amp;page=show_problem&amp;amp;problem=2521&#34;&gt;UVa11526 H(n)&lt;/a&gt;（几乎可以当做模板题）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.luogu.com.cn/problem/P3455&#34;&gt;POI2007 ZAP-Queries&lt;/a&gt;（数论分块一般配合 &lt;a href=&#34;https://oiwiki.com/math/number-theory/mobius/&#34;&gt;莫比乌斯反演&lt;/a&gt; 用以进一步降低复杂度；本题需要用到 &lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305105002108.png&#34; alt=&#34;image-20240305105002108&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;欧拉函数 表示的是小于等于 n 和互质的数的个数&lt;/p&gt;
+&lt;p&gt;当 n 是质数的时候，欧拉函数等于 n-1&lt;/p&gt;
+&lt;p&gt;性质&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;欧拉函数是积性函数&lt;/li&gt;
+&lt;li&gt;gcd (a,b)=1, 则&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϕ&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;ϕ&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;mi&gt;ϕ&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\phi(a*b)=\phi(a)*\phi(b)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;ϕ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;∗&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;ϕ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;∗&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;ϕ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;特别的，当 n 是奇数的时候，&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;ϕ&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;ϕ&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\phi(2n)=\phi(n)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;ϕ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;ϕ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;cmath&amp;gt;
+
+int euler_phi(int n) &amp;#123;
+  int ans = n;
+  for (int i = 2; i * i &amp;lt;= n; i++)
+    if (n % i == 0) &amp;#123;
+      ans = ans / i * (i - 1);
+      while (n % i == 0) n /= i;
+    &amp;#125;
+  if (n &amp;gt; 1) ans = ans / n * (n - 1);
+  return ans;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这种算法的时间复杂度是 O (&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msqrt&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msqrt&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\sqrt{n}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.04em;vertical-align:-0.2397em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord sqrt&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8003em;&#34;&gt;&lt;span class=&#34;svg-align&#34; style=&#34;top:-3em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34; style=&#34;padding-left:0.833em;&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-2.7603em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;hide-tail&#34; style=&#34;min-width:0.853em;height:1.08em;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#39;400em&#39; height=&#39;1.08em&#39; viewBox=&#39;0 0 400000 1080&#39; preserveAspectRatio=&#39;xMinYMin slice&#39;&gt;&lt;path d=&#39;M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.2397em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305110411881.png&#34; alt=&#34;image-20240305110411881&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305110620807.png&#34; alt=&#34;image-20240305110620807&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ll Pollard_Rho(ll N) &amp;#123;
+  ll c = rand() % (N - 1) + 1;
+  ll t = f(0, c, N);
+  ll r = f(f(0, c, N), c, N);
+  while (t != r) &amp;#123;
+    ll d = gcd(abs(t - r), N);
+    if (d &amp;gt; 1) return d;
+    t = f(t, c, N);
+    r = f(f(r, c, N), c, N);
+  &amp;#125;
+  return N;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;ll Pollard_Rho(ll N) &amp;#123;
+  ll c = rand() % (N - 1) + 1;
+  ll t = f(0, c, N);
+  ll r = f(f(0, c, N), c, N);
+  while (t != r) &amp;#123;
+    ll d = gcd(abs(t - r), N);
+    if (d &amp;gt; 1) return d;
+    t = f(t, c, N);
+    r = f(f(r, c, N), c, N);
+  &amp;#125;
+  return N;
+&amp;#125;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305111254401.png&#34; alt=&#34;image-20240305111254401&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;倍增优化的代码实现&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305111849993.png&#34; alt=&#34;image-20240305111849993&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;bits/stdc++.h&amp;gt;
+
+using namespace std;
+
+typedef long long ll;
+
+int t;
+long long max_factor, n;
+
+long long gcd(long long a, long long b) &amp;#123;
+  if (b == 0) return a;
+  return gcd(b, a % b);
+&amp;#125;
+
+long long quick_pow(long long x, long long p, long long mod) &amp;#123;  // 快速幂
+  long long ans = 1;
+  while (p) &amp;#123;
+    if (p &amp;amp; 1) ans = (__int128)ans * x % mod;
+    x = (__int128)x * x % mod;
+    p &amp;gt;&amp;gt;= 1;
+  &amp;#125;
+  return ans;
+&amp;#125;
+
+bool Miller_Rabin(long long p) &amp;#123;  // 判断素数
+  if (p &amp;lt; 2) return 0;
+  if (p == 2) return 1;
+  if (p == 3) return 1;
+  long long d = p - 1, r = 0;
+  while (!(d &amp;amp; 1)) ++r, d &amp;gt;&amp;gt;= 1;  // 将d处理为奇数
+  for (long long k = 0; k &amp;lt; 10; ++k) &amp;#123;
+    long long a = rand() % (p - 2) + 2;
+    long long x = quick_pow(a, d, p);
+    if (x == 1 || x == p - 1) continue;
+    for (int i = 0; i &amp;lt; r - 1; ++i) &amp;#123;
+      x = (__int128)x * x % p;
+      if (x == p - 1) break;
+    &amp;#125;
+    if (x != p - 1) return 0;
+  &amp;#125;
+  return 1;
+&amp;#125;
+
+long long Pollard_Rho(long long x) &amp;#123;
+  long long s = 0, t = 0;
+  long long c = (long long)rand() % (x - 1) + 1;
+  int step = 0, goal = 1;
+  long long val = 1;
+  for (goal = 1;; goal *= 2, s = t, val = 1) &amp;#123;  // 倍增优化
+    for (step = 1; step &amp;lt;= goal; ++step) &amp;#123;
+      t = ((__int128)t * t + c) % x;
+      val = (__int128)val * abs(t - s) % x;
+      if ((step % 127) == 0) &amp;#123;
+        long long d = gcd(val, x);
+        if (d &amp;gt; 1) return d;
+      &amp;#125;
+    &amp;#125;
+    long long d = gcd(val, x);
+    if (d &amp;gt; 1) return d;
+  &amp;#125;
+&amp;#125;
+
+void fac(long long x) &amp;#123;
+  if (x &amp;lt;= max_factor || x &amp;lt; 2) return;
+  if (Miller_Rabin(x)) &amp;#123;              // 如果x为质数
+    max_factor = max(max_factor, x);  // 更新答案
+    return;
+  &amp;#125;
+  long long p = x;
+  while (p &amp;gt;= x) p = Pollard_Rho(x);  // 使用该算法
+  while ((x % p) == 0) x /= p;
+  fac(x), fac(p);  // 继续向下分解x和p
+&amp;#125;
+
+int main() &amp;#123;
+  scanf(&amp;quot;%d&amp;quot;, &amp;amp;t);
+  while (t--) &amp;#123;
+    srand((unsigned)time(NULL));
+    max_factor = 0;
+    scanf(&amp;quot;%lld&amp;quot;, &amp;amp;n);
+    fac(n);
+    if (max_factor == n)  // 最大的质因数即自己
+      printf(&amp;quot;Prime\n&amp;quot;);
+    else
+      printf(&amp;quot;%lld\n&amp;quot;, max_factor);
+  &amp;#125;
+  return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305121231841.png&#34; alt=&#34;image-20240305121231841&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vector&amp;lt;int&amp;gt; prime;
+bool is_prime[N];
+
+void Eratosthenes(int n) &amp;#123;
+  is_prime[0] = is_prime[1] = false;
+  for (int i = 2; i &amp;lt;= n; ++i) is_prime[i] = true;
+  for (int i = 2; i &amp;lt;= n; ++i) &amp;#123;
+    if (is_prime[i]) &amp;#123;
+      prime.push_back(i);
+      if ((long long)i * i &amp;gt; n) continue;
+      for (int j = i * i; j &amp;lt;= n; j += i)
+        // 因为从 2 到 i - 1 的倍数我们之前筛过了，这里直接从 i
+        // 的倍数开始，提高了运行速度
+        is_prime[j] = false;  // 是 i 的倍数的均不是素数
+    &amp;#125;
+  &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305121344310.png&#34; alt=&#34;image-20240305121344310&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;筛至平方根提高效率&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vector&amp;lt;int&amp;gt; prime;
+bool is_prime[N];
+
+void Eratosthenes(int n) &amp;#123;
+  is_prime[0] = is_prime[1] = false;
+  for (int i = 2; i &amp;lt;= n; ++i) is_prime[i] = true;
+  // i * i &amp;lt;= n 说明 i &amp;lt;= sqrt(n)
+  for (int i = 2; i * i &amp;lt;= n; ++i) &amp;#123;
+    if (is_prime[i])
+      for (int j = i * i; j &amp;lt;= n; j += i) is_prime[j] = false;
+  &amp;#125;
+  for (int i = 2; i &amp;lt;= n; ++i)
+    if (is_prime[i]) prime.push_back(i);
+&amp;#125;
+
+
+
+
+
+
+prime = []
+is_prime = [False] * N
+
+def Eratosthenes(n):
+    is_prime[0] = is_prime[1] = False
+    for i in range(2, n + 1):
+        is_prime[i] = True
+    # 让 i 循环到 &amp;lt;= sqrt(n)
+    for i in range(2, isqrt(n) + 1): # `isqrt` 是 Python 3.8 新增的函数
+        if is_prime[i]:
+            for j in range(i * i, n + 1, i):
+                is_prime[j] = False
+    for i in range(2, n + 1):
+        if is_prime[i]:
+            prime.append(i)
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这种优化不会影响渐进时间复杂度，实际上重复以上证明，我们将得到 &lt;img loading=&#34;lazy&#34; data-src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; alt=&#34;n n n qrt n + o(n)&#34; /&gt;，根据对数的性质，它们的渐进相同，但操作次数会明显减少。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305121447195.png&#34; alt=&#34;image-20240305121447195&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int count_primes(int n) &amp;#123;
+  const int S = 10000;
+  vector&amp;lt;int&amp;gt; primes;
+  int nsqrt = sqrt(n);
+  vector&amp;lt;char&amp;gt; is_prime(nsqrt + 1, true);
+  for (int i = 2; i &amp;lt;= nsqrt; i++) &amp;#123;
+    if (is_prime[i]) &amp;#123;
+      primes.push_back(i);
+      for (int j = i * i; j &amp;lt;= nsqrt; j += i) is_prime[j] = false;
+    &amp;#125;
+  &amp;#125;
+  int result = 0;
+  vector&amp;lt;char&amp;gt; block(S);
+  for (int k = 0; k * S &amp;lt;= n; k++) &amp;#123;
+    fill(block.begin(), block.end(), true);
+    int start = k * S;
+    for (int p : primes) &amp;#123;
+      int start_idx = (start + p - 1) / p;
+      int j = max(start_idx, p) * p - start;
+      for (; j &amp;lt; S; j += p) block[j] = false;
+    &amp;#125;
+    if (k == 0) block[0] = block[1] = false;
+    for (int i = 0; i &amp;lt; S &amp;amp;&amp;amp; start + i &amp;lt;= n; i++) &amp;#123;
+      if (block[i]) result++;
+    &amp;#125;
+  &amp;#125;
+  return result;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305121508991.png&#34; alt=&#34;image-20240305121508991&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;卧槽不断优化牛逼&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vector&amp;lt;int&amp;gt; pri;
+bool not_prime[N];
+
+void pre(int n) &amp;#123;
+  for (int i = 2; i &amp;lt;= n; ++i) &amp;#123;
+    if (!not_prime[i]) &amp;#123;
+      pri.push_back(i);
+    &amp;#125;
+    for (int pri_j : pri) &amp;#123;
+      if (i * pri_j &amp;gt; n) break;
+      not_prime[i * pri_j] = true;
+      if (i % pri_j == 0) &amp;#123;
+        // i % pri_j == 0
+        // 换言之，i 之前被 pri_j 筛过了
+        // 由于 pri 里面质数是从小到大的，所以 i 乘上其他的质数的结果一定会被
+        // pri_j 的倍数筛掉，就不需要在这里先筛一次，所以这里直接 break
+        // 掉就好了
+        break;
+      &amp;#125;
+    &amp;#125;
+  &amp;#125;
+&amp;#125;
+
+
+pri = []
+not_prime = [False] * N
+
+def pre(n):
+    for i in range(2, n + 1):
+        if not not_prime[i]:
+            pri.append(i)
+        for pri_j in pri:
+            if i * pri_j &amp;gt; n:
+                break
+            not_prime[i * pri_j] = True
+            if i % pri_j == 0:
+                &amp;quot;&amp;quot;&amp;quot;
+                i % pri_j == 0
+                换言之，i 之前被 pri_j 筛过了
+                由于 pri 里面质数是从小到大的，所以 i 乘上其他的质数的结果一定会被
+                pri_j 的倍数筛掉，就不需要在这里先筛一次，所以这里直接 break
+                掉就好了
+                &amp;quot;&amp;quot;&amp;quot;
+                break
+                
+                
+                
+                
+筛法求欧拉函数
+vector&amp;lt;int&amp;gt; pri;
+bool not_prime[N];
+int phi[N];
+
+void pre(int n) &amp;#123;
+  phi[1] = 1;
+  for (int i = 2; i &amp;lt;= n; i++) &amp;#123;
+    if (!not_prime[i]) &amp;#123;
+      pri.push_back(i);
+      phi[i] = i - 1;
+    &amp;#125;
+    for (int pri_j : pri) &amp;#123;
+      if (i * pri_j &amp;gt; n) break;
+      not_prime[i * pri_j] = true;
+      if (i % pri_j == 0) &amp;#123;
+        phi[i * pri_j] = phi[i] * pri_j;
+        break;
+      &amp;#125;
+      phi[i * pri_j] = phi[i] * phi[pri_j];
+    &amp;#125;
+  &amp;#125;
+&amp;#125;
+
+pri = []
+not_prime = [False] * N
+phi = [0] * N
+
+def pre(n):
+    phi[1] = 1
+    for i in range(2, n + 1):
+        if not not_prime[i]:
+            pri.append(i)
+            phi[i] = i - 1
+        for pri_j in pri:
+            if i * pri_j &amp;gt; n:
+                break
+            not_prime[i * pri_j] = True
+            if i % pri_j == 0:
+                phi[i * pri_j] = phi[i] * pri_j
+                break
+            phi[i * pri_j] = phi[i] * phi[pri_j]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;筛法求莫比乌斯函数是一种用于计算莫比乌斯函数值的有效方法，它可以在线性时间内计算出一定范围内所有数的莫比乌斯函数值。这种方法通常被称为线性筛法。&lt;/p&gt;
+&lt;p&gt;线性筛法的基本思想是利用数论中的一些性质，在遍历过程中逐步计算每个数的莫比乌斯函数值，同时将合数标记出来，以避免重复计算。&lt;/p&gt;
+&lt;p&gt;以下是线性筛法求莫比乌斯函数的基本步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;初始化一个数组  &lt;code&gt;mu[]&lt;/code&gt; ，用于存储每个数的莫比乌斯函数值，初始值为 1。&lt;/li&gt;
+&lt;li&gt;遍历从 2 到 n 的每个数 i，对于每个素数，将其莫比乌斯函数值设置为 -1（因为素数的莫比乌斯函数值为 -1），同时将所有大于 1 的 i 的倍数的莫比乌斯函数值设置为 0。&lt;/li&gt;
+&lt;li&gt;对于每个大于 1 的数 i，如果 i 可以被某个素数 p 整除，则将 i 的莫比乌斯函数值设置为 -mu [i/p]，否则设置为 0。&lt;/li&gt;
+&lt;li&gt;最后得到的数组  &lt;code&gt;mu[]&lt;/code&gt;  中存储了从 1 到 n 的每个数的莫比乌斯函数值。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下面是用 C++ 实现线性筛法求莫比乌斯函数的示例代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;vector&amp;gt;
+
+using namespace std;
+
+vector&amp;lt;int&amp;gt; mobius(int n) &amp;#123;
+    vector&amp;lt;int&amp;gt; mu(n + 1, 1);
+    vector&amp;lt;int&amp;gt; prime;
+    vector&amp;lt;bool&amp;gt; is_prime(n + 1, true);
+    mu[1] = 1;
+    for (int i = 2; i &amp;lt;= n; ++i) &amp;#123;
+        if (is_prime[i]) &amp;#123;
+            prime.push_back(i);
+            mu[i] = -1;
+        &amp;#125;
+        for (int j = 0; j &amp;lt; prime.size() &amp;amp;&amp;amp; i * prime[j] &amp;lt;= n; ++j) &amp;#123;
+            is_prime[i * prime[j]] = false;
+            if (i % prime[j] == 0) &amp;#123;
+                mu[i * prime[j]] = 0;
+                break;
+            &amp;#125; else &amp;#123;
+                mu[i * prime[j]] = -mu[i];
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+    return mu;
+&amp;#125;
+
+int main() &amp;#123;
+    int n = 10;
+    vector&amp;lt;int&amp;gt; mu = mobius(n);
+    for (int i = 1; i &amp;lt;= n; ++i) &amp;#123;
+        cout &amp;lt;&amp;lt; &amp;quot;mu[&amp;quot; &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &amp;quot;] = &amp;quot; &amp;lt;&amp;lt; mu[i] &amp;lt;&amp;lt; endl;
+    &amp;#125;
+    return 0;
+&amp;#125;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305121752199.png&#34; alt=&#34;image-20240305121752199&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;C:%5CUsers%5Clystics%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240305121804238.png&#34; alt=&#34;image-20240305121804238&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vector&amp;lt;int&amp;gt; pri;
+bool not_prime[N];
+int mu[N];
+
+void pre(int n) &amp;#123;
+  mu[1] = 1;
+  for (int i = 2; i &amp;lt;= n; ++i) &amp;#123;
+    if (!not_prime[i]) &amp;#123;
+      mu[i] = -1;
+      pri.push_back(i);
+    &amp;#125;
+    for (int pri_j : pri) &amp;#123;
+      if (i * pri_j &amp;gt; n) break;
+      not_prime[i * pri_j] = true;
+      if (i % pri_j == 0) &amp;#123;
+        mu[i * pri_j] = 0;
+        break;
+      &amp;#125;
+      mu[i * pri_j] = -mu[i];
+    &amp;#125;
+  &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;pri = []
+not_prime = [False] * N
+mu = [0] * N
+
+def pre(n):
+    mu[1] = 1
+    for i in range(2, n + 1):
+        if not not_prime[i]:
+            pri.append(i)
+            mu[i] = -1
+        for pri_j in pri:
+            if i * pri_j &amp;gt; n:
+                break
+            not_prime[i * pri_j] = True
+            if i % pri_j == 0:
+                mu[i * pri_j] = 0
+                break
+            mu[i * pri_j] = -mu[i]
+&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
